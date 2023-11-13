@@ -206,15 +206,18 @@ nav,
   font-weight: var(--w4);
 }
 
+.trending-now-container h2,
 .new-releases-container h2,
 .hero-image-container h1 {
   font-weight: var(--w6);
 }
 
+.reviews-container h3,
 .cta-explore {
   font-size: var(--s21);
 }
 
+.trending-now-container h2,
 .new-releases-container h2,
 .prices,
 .titles,
@@ -222,6 +225,8 @@ nav,
   font-size: var(--s28);
 }
 
+.trending-now-container,
+.reviews-container,
 .new-releases-container,
 .titles {
   text-align: center;
@@ -237,10 +242,15 @@ nav,
 */
 
 .overlay {
-  background-color: var(--black);
   opacity: 25%;
 }
 
+.advert section,
+.overlay {
+  background-color: var(--black);
+}
+
+.reviews-wrap figure blockquote,
 .mobile-navigation {
   background-color: var(--light-blue);
 }
@@ -260,6 +270,7 @@ main {
   color: var(--fancy-green);
 }
 
+footer a:hover,
 .heading-right a:hover,
 nav a:hover,
 .mobile-navigation a:hover {
@@ -278,6 +289,10 @@ input {
 
 main .cta-explore {
   border-color: var(--light-blue);
+}
+
+aside .cta-advert {
+  border-color: var(--fancy-green);
 }
 
 
@@ -301,6 +316,9 @@ main .cta-explore {
   display: flex;
 }
 
+footer,
+.reviews-container,
+.advert section,
 .game-card section,
 .hero-image-container,
 .mobile-navigation,
@@ -308,10 +326,14 @@ main .cta-explore {
   flex-direction: column;
 }
 
+footer div,
+.trending-now-container,
 .new-releases-container {
   flex-wrap: wrap;
 }
 
+.trending-now-container,
+.advert section,
 .new-releases-container,
 .quest-wrap,
 .hamburger-wrap-2,
@@ -325,6 +347,8 @@ main .cta-explore {
   justify-content: flex-end;
 }
 
+footer,
+.advert section,
 .game-card section,
 .hero-image-container section,
 .quest-wrap,
@@ -346,21 +370,39 @@ main .cta-explore {
   gap: 10px;
 }
 
+.ftr-socials,
+.reviews-container,
 .game-card section {
   gap: 20px;
 }
 
+.ftr-links {
+  gap: 30px;
+}
+
+footer {
+  gap: 40px;
+}
+
+.advert section {
+  gap: 60px;
+}
+
+.trending-now-container,
 .new-releases-container {
   row-gap: 60px;
   column-gap: 100px;
 }
 
+.advert div,
+.advert section,
 .hero-image-container section,
 .hero-image-container div,
 main {
   flex: 1;
 }
 
+.trending-now-container h2,
 .new-releases-container h2 {
   flex: 100%;
 }
@@ -410,14 +452,20 @@ main {
 }
 
 
-
 .search {
   height: 48px;
   border: 0;
 }
 
+.cta-advert,
 .cta-explore {
   border: 2px solid;
+  border-radius: var(--r8);
+}
+
+.cta-advert,
+.cta-explore,
+.reviews-wrap figure blockquote {
   border-radius: var(--r8);
 }
 
@@ -440,6 +488,7 @@ main {
 /* 
 8.  Positioning
 */
+
 
 body,
 header,
@@ -484,6 +533,10 @@ header,
   padding: 10px;
 }
 
+.reviews-wrap figure blockquote {
+  padding: 16px;
+}
+
 .search-container {
   padding: 20px
 }
@@ -492,17 +545,22 @@ header,
   padding: 0 50px 50px 0;
 }
 
+.cta-advert,
 .cta-explore {
   padding: 10px 20px;
 }
 
+.trending-now-container,
+.reviews-container,
 .new-releases-container {
   padding: 60px 20px;
 }
 
+footer,
 .game-card section {
   padding: 20px 0;
 }
+
 
 /* 
 10. Margin
@@ -650,6 +708,10 @@ header,
     padding: 20px 0 0 0;
   }
 
+  .search-container {
+    padding: 20px 100px
+  }
+
   nav a {
     padding: 10px 20px;
   }
@@ -675,6 +737,29 @@ header,
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
+
+  .mid-section-home {
+    align-items: center;
+  }
+
+  .advert {
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+  .mid-section-home {
+    display: flex;
+  }
+
+  .advert,
+  .reviews-container {
+    flex: 1;
+  }
+
+  .search-container {
+    padding: 20px 200px
+  }
+
 
 }
