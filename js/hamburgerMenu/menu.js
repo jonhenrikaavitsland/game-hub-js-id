@@ -10,9 +10,6 @@ console.log(overlay);
 export const menuCloseIcon = document.querySelector(".hamburger-wrap-2");
 console.log(menuCloseIcon);
 
-export const menuAnchor = document.querySelectorAll(".mobile-navigation a");
-console.log(menuAnchor);
-
 export function openMenu() {
   menuMobile.classList.remove("hidden");
   overlay.classList.remove("hidden");
