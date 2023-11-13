@@ -425,11 +425,11 @@ header,
     gap: 30px;
   }
 
-  .search-btn-wrap,
-  nav {
+  .search-btn-wrap {
     justify-content: center;
   }
 
+  nav,
   .logo-container {
     justify-content:  start;
   }
@@ -505,7 +505,7 @@ header,
   */
 
   nav {
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 0;
   }
 
   nav a {
@@ -533,4 +533,6 @@ header,
 
 
 
-@media (min-width: 1300px) {}
+@media (min-width: 1000px) {
+
+}
