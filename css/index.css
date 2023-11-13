@@ -1,0 +1,537 @@
+/* 
+Table of Contents::after
+
+1.  Custom Variants
+2.  Global Styles
+3.  Typography
+4.  Colors
+5.  Grid
+6.  Flex
+7.  Layout
+8.  Positioning
+9.  Padding
+10. Margin
+11. @Media
+
+*/
+
+/* 
+1.  Custom Variables
+*/
+
+:root {
+  /* Colors */
+  --dark-blue: #1d2540;
+  --dark-green: #01403a;
+  --white-f2: #f2f2f2;
+  --black: #0d0d0d;
+  --fancy-green: #1aff00;
+  --red: #f3a8a8;
+  --light-blue: #2d3e77;
+  --hover-bg: #B1DBAD;
+
+  /* Typography */
+  --montserrat: "Montserrat", sans-serif;
+  --teko: "Teko", sans-serif;
+  --w4: 400;
+  --w5: 500;
+  --w6: 600;
+  --s16: 1rem;
+  --s21: 1.3125rem;
+  --s28: 1.75rem;
+  --lstd: 1.5;
+
+  /* Border Radius */
+  --r8: 0.5rem;
+
+}
+
+
+/* 
+2.  Global Styles
+*/
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--dark-green);
+  color: var(--white-f2);
+  padding: 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--montserrat);
+  font-weight: var(--w5);
+  font-size: var(--s16);
+  line-height: var(--lstd);
+}
+
+
+/* 
+3.  Typography
+*/
+
+.cta,
+.search-btn-wrap button,
+nav,
+.mobile-navigation a {
+  text-transform: uppercase;
+}
+
+.hero-image-container h1 {
+  font-weight: var(--w6);
+  font-size: var(--s28);
+}
+
+.cta-explore {
+  font-size: var(--s21);
+}
+
+
+/* 
+4.  Colors
+*/
+
+.overlay {
+  background-color: var(--black);
+  opacity: 25%;
+}
+
+.mobile-navigation {
+  background-color: var(--light-blue);
+}
+
+.cta-explore,
+main {
+  background-color: var(--dark-blue);
+}
+
+.search,
+.quest-wrap {
+  background-color: var(--white-f2);
+}
+
+.cta-explore,
+.active {
+  color: var(--fancy-green);
+}
+
+.heading-right a:hover,
+nav a:hover,
+.mobile-navigation a:hover {
+  color: var(--hover-bg);
+  transition: 500ms;
+}
+
+input,
+.quest-wrap {
+  color: var(--dark-blue);
+}
+
+input {
+  caret-color: var(--dark-blue);
+}
+
+main .cta-explore {
+  border-color: var(--light-blue);
+}
+
+
+/* 
+5.  Grid
+*/
+
+
+
+
+/* 
+6.  Flex
+*/
+.flex,
+.search-container,
+.mobile-navigation,
+.hamburger-wrap-2,
+.mobile-navigation ul,
+.logo-container,
+.hamburger-wrap {
+  display: flex;
+}
+
+.hero-image-container,
+.mobile-navigation,
+.mobile-navigation ul {
+  flex-direction: column;
+}
+
+.quest-wrap,
+.hamburger-wrap-2,
+.logo-container,
+.hamburger-wrap {
+  justify-content: center;
+}
+
+.hero-image-container section,
+.hero-image-container div {
+  justify-content: flex-end;
+}
+
+.hero-image-container section,
+.quest-wrap,
+.hamburger-wrap-2,
+.logo-container,
+.hamburger-wrap {
+  align-items: center;
+}
+
+.hero-image-container div {
+  align-items: flex-end;
+}
+
+.mobile-navigation ul {
+  gap: 5px;
+}
+
+.mobile-navigation {
+  gap: 10px;
+}
+
+.hero-image-container section,
+.hero-image-container div,
+main {
+  flex: 1;
+}
+
+
+/* 
+7.  Layout
+*/
+
+.hidden,
+.search-btn-wrap,
+.heading-right {
+  display: none;
+}
+
+.hamburger-wrap-2,
+.hamburger-wrap {
+  width: 28px;
+  height: 32px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.mobile-navigation {
+  height: 100vh;
+  width: 60%;
+}
+
+.overlay {
+  height: 100%;
+}
+
+.search-wrap,
+.search,
+.overlay {
+  width: 100%;
+}
+
+.quest-wrap {
+  width: 50px;
+}
+
+.search {
+  height: 48px;
+  border: 0;
+}
+
+.cta-explore {
+  border: 2px solid;
+  border-radius: var(--r8);
+}
+
+.search {
+  border-radius: 0 5px 5px 0;
+}
+
+.quest-wrap {
+  border-radius: 5px 0 0 5px;
+}
+
+.hero-image-container {
+  background-image: url("./../images/hero-image-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position-x: 70%;
+}
+
+/* 
+8.  Positioning
+*/
+
+body,
+header,
+.logo-container {
+  position: relative;
+}
+
+.mobile-navigation,
+.overlay,
+.hamburger-wrap {
+  position: absolute;
+}
+
+.logo-container {
+  z-index: 1;
+}
+
+.overlay {
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+
+.mobile-navigation,
+.hamburger-wrap {
+  z-index: 10;
+}
+
+.hamburger-wrap {
+  top: 10px;
+  left: 10px;
+}
+
+
+/* 
+9. Padding
+*/
+
+.mobile-navigation,
+.mobile-navigation li a,
+.mobile-navigation li {
+  padding: 10px;
+}
+
+.search-container {
+  padding: 20px
+}
+
+.hero-image-container {
+  padding: 0 50px 50px 0;
+}
+
+.cta-explore {
+  padding: 10px 20px;
+}
+
+/* 
+10. Margin
+*/
+
+
+/* 
+11. @Media
+*/
+
+@media (min-width: 600px) {
+
+  /* 
+  3.  Typography
+  */
+
+  .search-btn-wrap button {
+    font-size: var(--s21);
+  }
+
+
+  /* 
+  4.  Colors
+  */
+
+  .search-btn-wrap {
+    background-color: var(--white-f2);
+  }
+
+  .search-btn-wrap button {
+    color: var(--dark-blue);
+  }
+
+  .search-btn-wrap button:hover {
+    color: var(--hover-bg);
+    background-color: var(--dark-green);
+    transition: 500ms;
+  }
+
+  .cart {
+    color: var(--fancy-green);
+  }
+
+  
+  /* 
+  6.  Flex
+  */
+
+  .search-btn-wrap,
+  .heading-right p,
+  .heading-top,
+  nav {
+    display: flex
+  }
+
+  nav ul {
+    display: inline-flex;
+    gap: 50px;
+  }
+
+  .heading-right p {
+    gap: 30px;
+  }
+
+  .search-btn-wrap,
+  nav {
+    justify-content: center;
+  }
+
+  .logo-container {
+    justify-content:  start;
+  }
+
+  .heading-right p {
+    justify-content: flex-end;
+  }
+
+  .search-btn-wrap,
+  .heading-top {
+    align-items: center;
+  }
+
+  .heading-right,
+  .logo-container {
+    flex: 1;
+  }
+
+
+  /* 
+  7.  Layout
+  */
+
+  .hamburger-wrap {
+    display: none;
+  }
+  
+  .heading-right {
+    display: block;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .search-btn-wrap {
+    width: 100px;
+  }
+
+  .search {
+    border-radius: 0;
+  }
+
+  .search-btn-wrap {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .search-btn-wrap button {
+    border: 0;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  /* 
+  8.  Positioning
+  */
+
+  .cart-wrap {
+    position: relative;
+  }
+
+  .cart {
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    z-index: 5;
+  }
+
+
+  /*
+  9.  Padding
+  */
+
+  nav {
+    padding: 10px 0 0 0;
+  }
+
+  nav a {
+    padding: 10px 20px;
+  }
+
+  header {
+    padding: 20px 20px 15px 20px;
+  }
+
+  .heading-right {
+    padding: 0 20px 0 0;
+  }
+
+  .hero-image-container {
+    padding: 0 100px 100px 0;
+  }
+
+
+  /* 
+  10. Margin
+  */
+}
+
+
+
+
+@media (min-width: 1300px) {}

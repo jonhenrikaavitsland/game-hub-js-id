@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The universe of games, by Game Hub! We offer a broad variety of quality games while remaining an affordable option for every gamer.">
+    <title>Game Hub | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;500;600&family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./images/logo-checked.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a4285c5b9b.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header>
+      <div role="navigation" class="mobile-navigation hidden">
+        <div class="hamburger-wrap-2">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./pages/games/">Games</a>
+          </li>
+          <li>
+            <a href="./pages/about/">About</a>
+          </li>
+          <li>
+            <a href="./pages/contact/">Contact</a>
+          </li>
+          <li>
+            <a href="./pages/cart/">Cart</a>
+          </li>
+          <li>
+            <a href="./pages/account/">Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="heading-top">
+        <div class="logo-container">
+          <div class="hamburger-wrap">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <img src="./images/logo-unchecked.png" alt="game hub" class="logo">
+        </div>
+        <div class="heading-right">
+          <p>
+            <a href="./pages/account/">Sign in / Register</a>
+            <span class="cart-wrap">
+              <a href="./pages/cart/">Cart
+                <span class="cart">0</span>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./pages/games/">Games</a>
+          </li>
+          <li>
+            <a href="./pages/about/">About</a>
+          </li>
+          <li>
+            <a href="./pages/contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="search-container">
+        <div class="quest-wrap flex">
+          <i class="fa-solid fa-question"></i>
+        </div>
+        <div class="search-wrap">
+          <input type="text" name="search" id="search" placeholder="Search our games..." class="search">
+        </div>
+        <div class="search-btn-wrap">
+          <button>go</button>
+        </div>
+      </div>
+      <div class="hero-image-container flex">
+        <section class="flex">
+          <h1>Ready to play?</h1>
+        </section>
+        <div class="flex">
+          <a href="./pages/games/" class="cta cta-explore">Explore</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
