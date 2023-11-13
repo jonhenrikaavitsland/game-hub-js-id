@@ -206,6 +206,7 @@ nav,
   font-weight: var(--w4);
 }
 
+.new-releases-container h2,
 .hero-image-container h1 {
   font-weight: var(--w6);
 }
@@ -214,12 +215,14 @@ nav,
   font-size: var(--s21);
 }
 
+.new-releases-container h2,
 .prices,
 .titles,
 .hero-image-container h1 {
   font-size: var(--s28);
 }
 
+.new-releases-container,
 .titles {
   text-align: center;
 }
@@ -356,6 +359,10 @@ main .cta-explore {
 .hero-image-container div,
 main {
   flex: 1;
+}
+
+.new-releases-container h2 {
+  flex: 100%;
 }
 
 

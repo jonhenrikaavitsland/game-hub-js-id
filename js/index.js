@@ -25,12 +25,19 @@ import {
 const parentNewReleases = document.querySelector(".new-releases-container");
 console.log(parentNewReleases);
 
+const headingNewReleases = "New Releases";
+
+function renderHeading(heading, parent) {
+  parent.innerHTML = `<h2>${heading}</h2>`;
+}
+
 async function createHome() {
   try {
     const games = await fetchData(url);
     const newReleases = filterNewReleases(games);
     // const trendingNow = filterTrendingNow(games);
     clearReleaseList(parentNewReleases);
+    renderHeading(headingNewReleases, parentNewReleases);
     renderReleases(newReleases, parentNewReleases);
   } catch (error) {}
 }
