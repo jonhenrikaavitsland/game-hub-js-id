@@ -92,7 +92,7 @@ body {
   background-color: var(--dark-green);
   color: var(--white-f2);
   padding: 0;
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -206,6 +206,7 @@ nav,
   font-weight: var(--w4);
 }
 
+.games-list-container h1,
 .trending-now-container h2,
 .new-releases-container h2,
 .hero-image-container h1 {
@@ -217,6 +218,7 @@ nav,
   font-size: var(--s21);
 }
 
+.games-list-container h1,
 .trending-now-container h2,
 .new-releases-container h2,
 .prices,
@@ -225,6 +227,7 @@ nav,
   font-size: var(--s28);
 }
 
+.games-list-container,
 .trending-now-container,
 .reviews-container,
 .new-releases-container,
@@ -236,6 +239,13 @@ nav,
   white-space: nowrap;
 }
 
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
 
 /* 
 4.  Colors
@@ -306,6 +316,7 @@ aside .cta-advert {
 /* 
 6.  Flex
 */
+figure,
 .flex,
 .search-container,
 .mobile-navigation,
@@ -316,6 +327,7 @@ aside .cta-advert {
   display: flex;
 }
 
+figure,
 footer,
 .reviews-container,
 .advert section,
@@ -326,12 +338,14 @@ footer,
   flex-direction: column;
 }
 
+.games-list-container,
 footer div,
 .trending-now-container,
 .new-releases-container {
   flex-wrap: wrap;
 }
 
+.games-list-container,
 .trending-now-container,
 .advert section,
 .new-releases-container,
@@ -347,6 +361,7 @@ footer div,
   justify-content: flex-end;
 }
 
+figure,
 footer,
 .advert section,
 .game-card section,
@@ -388,6 +403,7 @@ footer {
   gap: 60px;
 }
 
+.games-list-container,
 .trending-now-container,
 .new-releases-container {
   row-gap: 60px;
@@ -402,6 +418,7 @@ main {
   flex: 1;
 }
 
+.games-list-container h1,
 .trending-now-container h2,
 .new-releases-container h2 {
   flex: 100%;
@@ -448,7 +465,11 @@ main {
 }
 
 .game-card {
-  width: 200px;
+  width: 215px;
+}
+
+blockquote {
+  max-width: 500px;
 }
 
 
@@ -550,6 +571,7 @@ header,
   padding: 10px 20px;
 }
 
+.games-list-container,
 .trending-now-container,
 .reviews-container,
 .new-releases-container {
@@ -566,6 +588,9 @@ footer,
 10. Margin
 */
 
+blockquote {
+  margin: 0;
+}
 
 /* 
 11. @Media
@@ -604,6 +629,18 @@ footer,
     color: var(--fancy-green);
   }
 
+  header nav li{
+    border-color: var(--dark-blue);
+  }
+
+  .blue {
+    background-color: var(--dark-blue);
+  }
+
+  .blue a {
+    color: var(--white-f2);
+  }
+
   
   /* 
   6.  Flex
@@ -618,7 +655,6 @@ footer,
 
   nav ul {
     display: inline-flex;
-    gap: 50px;
   }
 
   .heading-right p {
@@ -683,6 +719,11 @@ footer,
     cursor: pointer;
   }
 
+  nav li {
+    border: 2px solid;
+    border-radius: 25px 25px 0 0;
+  }
+
 
   /* 
   8.  Positioning
@@ -703,9 +744,12 @@ footer,
   /*
   9.  Padding
   */
-
   nav {
-    padding: 20px 0 0 0;
+    padding-top: 20px;
+  }
+
+  nav li {
+    padding: 16px 32px;
   }
 
   .search-container {
@@ -717,7 +761,7 @@ footer,
   }
 
   header {
-    padding: 20px 20px 15px 20px;
+    padding: 20px 20px 0 0;
   }
 
   .heading-right {
@@ -744,8 +788,8 @@ footer,
   }
 
   .advert {
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 550px;
+    max-height: 550px;
   }
 
   .mid-section-home {

@@ -21,12 +21,13 @@ export function filterTrendingNow(data) {
 }
 
 export function filterGames(data) {
-  const games = data;
+  const games = [];
+  for (let i = 0; i < data.length; i++) {
+    games.push(data[i]);
+  }
   games.push(data[0]);
   games.push(data[1]);
   return games;
 }
 
-// export const newReleases = filterNewReleases(games);
-// export const trendingNow = filterTrendingNow(games);
-// export const listOfGames = filterGames(games);
+

@@ -2,11 +2,10 @@ import { clearReleaseList, renderReleases } from "./../render/renderLists.js";
 import { url } from "./../data/constants.js";
 import { fetchData } from "./../data/fetchApi.js";
 import { filterNewReleases, filterTrendingNow } from "./../data/data.js";
+import { createErrorMessage } from "../error/createMessage.js";
 
 const parentNewReleases = document.querySelector(".new-releases-container");
-console.log(parentNewReleases);
 const parentTrendingNow = document.querySelector(".trending-now-container");
-console.log(parentTrendingNow);
 
 const headingNewReleases = "New Releases";
 const headingTrendingNow = "Trending Now";
@@ -28,5 +27,6 @@ export async function createHome() {
     renderReleases(trendingNow, parentTrendingNow);
   } catch (error) {
     console.log("An error occurred", error);
+    createErrorMessage(parentNewReleases, parentTrendingNow, error);
   }
 }
