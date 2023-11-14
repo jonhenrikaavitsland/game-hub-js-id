@@ -11,7 +11,7 @@ export function renderReleases(releases, parentElement) {
 }
 
 export function createHtmlObject(release) {
-  const linkUrl = `./../../games/title/?id=${release.id}`;
+  const linkUrl = `./title/?id=${release.id}`;
 
   const element = document.createElement("div");
   element.classList.add("game-card");
