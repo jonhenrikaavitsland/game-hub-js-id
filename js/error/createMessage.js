@@ -1,4 +1,4 @@
-export function createErrorMessage(parent1, parent2, error) {
+export function createErrorMessage(parent1, error, parent2) {
   parent1.innerHTML = `<div>
   <p>An error occurred, ${error}</p>
   </div>`;

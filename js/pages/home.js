@@ -27,6 +27,6 @@ export async function createHome() {
     renderReleases(trendingNow, parentTrendingNow);
   } catch (error) {
     console.log("An error occurred", error);
-    createErrorMessage(parentNewReleases, parentTrendingNow, error);
+    createErrorMessage(parentNewReleases, error, parentTrendingNow);
   }
 }
