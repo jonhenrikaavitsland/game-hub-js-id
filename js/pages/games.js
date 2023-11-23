@@ -18,7 +18,7 @@ export async function createGames() {
     const listOfGames = filterGames(games);
     clearReleaseList(parentGames);
     renderHeading(headingGames, parentGames);
-    renderReleases(listOfGames, parentGames);
+    renderReleases(listOfGames, parentGames, games);
   } catch (error) {
     console.log("An error occurred", error);
     createErrorMessage(parentGames, error);

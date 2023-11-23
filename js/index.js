@@ -23,7 +23,7 @@ switch (location.pathname) {
     // createGames();
     break;
   default:
-    createHome();
+  createHome();
 }
 
 

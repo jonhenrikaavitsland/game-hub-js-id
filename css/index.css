@@ -214,6 +214,10 @@ nav a:hover {
   color: var(--dark-blue);
 }
 
+.error {
+  color: red;
+}
+
 div .cta-explore {
   border-color: var(--light-blue);
 }
@@ -227,6 +231,7 @@ main {
   background-color: var(--dark-blue);
 }
 
+.error,
 .heading-wrap {
   background-color: var(--white-f2);
 }
@@ -321,7 +326,7 @@ main,
 
 nav {
   height: 100vh;
-  width: clamp(100px, 40%, 420px);
+  width: clamp(120px, 40%, 420px);
 }
 
 .overlay {
@@ -333,6 +338,7 @@ nav {
   height: 80px;
 }
 
+.error,
 .cta-explore {
   border: 2px solid;
   border-radius: var(--r8);
@@ -402,6 +408,7 @@ nav {
   padding: 10px;
 }
 
+.error,
 nav {
   padding: 20px;
 }
@@ -433,6 +440,9 @@ nav a {
 10. Margin
 */
 
+.error {
+  margin: 20px;
+}
 
 /* 
 11. @Media

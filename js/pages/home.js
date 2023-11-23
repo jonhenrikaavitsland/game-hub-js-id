@@ -14,9 +14,9 @@ export async function createHome() {
     const newReleases = filterNewReleases(games);
     const trendingNow = filterTrendingNow(games);
     clearReleaseList(parentNewReleases);
-    renderReleases(newReleases, parentNewReleases);
+    renderReleases(newReleases, parentNewReleases, "home");
     clearReleaseList(parentTrendingNow);
-    renderReleases(trendingNow, parentTrendingNow);
+    renderReleases(trendingNow, parentTrendingNow, "home");
   } catch (error) {
     console.log("An error occurred", error);
     createErrorMessage(parentNewReleases, error, parentTrendingNow);
