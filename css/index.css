@@ -194,6 +194,7 @@ body {
   text-transform: uppercase;
 }
 
+.slider-wrap h2,
 .hero-image-container h1 {
   font-size: var(--s28);
   font-weight: var(--w6);
@@ -311,12 +312,16 @@ nav ul {
   gap: 40px;
 }
 
+.slider-1,
+.slider-2 {
+  gap: 50px;
+}
+
 .hero-image-container {
   gap: 50vh;
 }
 
-.slider-2 i,
-.slider-1 i {
+.slider-heading {
   flex: 1;
 }
 
@@ -345,7 +350,7 @@ nav {
 }
 
 .slider-wrap {
-  height: 100px;
+  height: 150px;
 }
 
 .slider-2,
@@ -406,7 +411,7 @@ nav {
 }
 
 .slider-2 {
-  top: 50px;
+  top: 80px;
 }
 
 .hamburger-wrap,
@@ -450,8 +455,6 @@ nav a {
   padding: 10px 15px;
 }
 
-.slider-2 i,
-.slider-1 i,
 .hero-image-container {
   padding-right: 20px;
 }
@@ -462,6 +465,10 @@ nav a {
 
 .slider-wrap {
   padding: 20px 0 ;
+}
+
+.slider-icon {
+  padding: 0 10px;
 }
 
 
