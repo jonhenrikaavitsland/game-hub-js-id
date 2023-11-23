@@ -84,10 +84,6 @@ img {
   max-width: 100%;
 }
 
-main {
-  flex: 1;
-}
-
 body {
   background-color: var(--dark-green);
   color: var(--white-f2);
@@ -263,10 +259,12 @@ main {
 6.  Flex
 */
 
+main,
 .flex {
   display: flex;
 }
 
+main,
 .flex-col {
   flex-direction: column;
 }
@@ -307,6 +305,7 @@ nav ul {
   gap: 50vh;
 }
 
+main,
 .headings {
   flex: 1;
 }
