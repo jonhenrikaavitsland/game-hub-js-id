@@ -194,7 +194,7 @@ body {
   text-transform: uppercase;
 }
 
-.slider-wrap h2,
+.headings h2,
 .hero-image-container h1 {
   font-size: var(--s28);
   font-weight: var(--w6);
@@ -210,13 +210,12 @@ nav a:hover {
   transition: 300ms;
 }
 
-.slider-2,
-.slider-1 {
-  color: var(--dark-blue);
-}
-
 .cta-explore {
   color: var(--fancy-green);
+}
+
+.heading-wrap {
+  color: var(--dark-blue);
 }
 
 div .cta-explore {
@@ -232,18 +231,16 @@ main {
   background-color: var(--dark-blue);
 }
 
+.heading-wrap {
+  background-color: var(--white-f2);
+}
+
 .overlay {
   background-color: var(--black);
   opacity: 50%;
 }
 
-.slider-2,
-.slider-1 {
-  background-color: var(--white-f2);
-}
-
-.slider-1:hover,
-.slider-2:hover {
+.heading-wrap:hover {
   background-color: var(--hover-bg);
   transition: 500ms;
 }
@@ -274,6 +271,8 @@ main {
   flex-direction: column;
 }
 
+.headings,
+.heading-container,
 .hero-image-container,
 .new-releases-container,
 .trending-now-container,
@@ -281,20 +280,12 @@ main {
   justify-content: center;
 }
 
-.slider-2 i,
-.slider-1 i,
-.slider-2 h2,
-.slider-1 h2 {
-  justify-content: flex-end;
+.heading-wrap {
+  align-items: center;
 }
 
 .hero-image-container {
   align-items: flex-end;
-}
-
-.slider-2,
-.slider-1 {
-  align-items: center;
 }
 
 .new-releases-container,
@@ -312,22 +303,12 @@ nav ul {
   gap: 40px;
 }
 
-.slider-1,
-.slider-2 {
-  gap: 50px;
-}
-
 .hero-image-container {
   gap: 50vh;
 }
 
-.slider-heading {
+.headings {
   flex: 1;
-}
-
-.slider-2 h2,
-.slider-1 h2 {
-  flex: 14;
 }
 
 /* 
@@ -349,15 +330,6 @@ nav {
   height: 100%;
 }
 
-.slider-wrap {
-  height: 150px;
-}
-
-.slider-2,
-.slider-1 {
-  width: 700px;
-}
-
 .logo {
   height: 80px;
 }
@@ -367,13 +339,12 @@ nav {
   border-radius: var(--r8);
 }
 
-.slider-2,
-.slider-1 {
-  border-radius: 0 50px 50px 0;
+.heading-wrap {
+  border-radius: 50px;
+  width: 80%;
 }
 
-.slider-1,
-.slider-2,
+.heading-wrap,
 .hamburger-wrap-2 {
   cursor: pointer;
 }
@@ -390,15 +361,12 @@ nav {
 8.  Positioning
 */
 
-.slider-wrap,
 .logo-container,
 body,
 header {
   position: relative;
 }
 
-.slider-2,
-.slider-1,
 .hamburger-wrap,
 .overlay,
 nav {
@@ -410,21 +378,9 @@ nav {
   top: 0;
 }
 
-.slider-2 {
-  top: 80px;
-}
-
 .hamburger-wrap,
 .overlay {
   left: 0;
-}
-
-.slider-1 {
-  right: 50px
-}
-
-.slider-2 {
-  left: -650px;
 }
 
 .hamburger-wrap {
@@ -463,13 +419,14 @@ nav a {
   padding: 10px 20px;
 }
 
-.slider-wrap {
-  padding: 20px 0 ;
+.heading-container {
+  padding: 20px 0;
 }
 
-.slider-icon {
+.headings-icon {
   padding: 0 10px;
 }
+
 
 
 
