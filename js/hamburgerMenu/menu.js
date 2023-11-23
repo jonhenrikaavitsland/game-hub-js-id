@@ -1,5 +1,5 @@
 export const menuIcon = document.querySelector(".hamburger-wrap");
-export const menuMobile = document.querySelector(".mobile-navigation");
+export const menuMobile = document.querySelector("nav");
 export const overlay = document.querySelector(".overlay");
 export const menuCloseIcon = document.querySelector(".hamburger-wrap-2");
 

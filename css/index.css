@@ -1,7 +1,7 @@
 /* 
 Table of Contents::after
 
-1.  Custom Variants
+1.  Custom Variables
 2.  Global Styles
 3.  Typography
 4.  Colors
@@ -80,12 +80,12 @@ ul {
   margin: 0;
 }
 
-nav {
-  display: none;
-}
-
 img {
   max-width: 100%;
+}
+
+main {
+  flex: 1;
 }
 
 body {
@@ -190,78 +190,39 @@ body {
 3.  Typography
 */
 
-.prices,
-.titles {
-  font-family: var(--teko);
-}
-
-.cta,
-.search-btn-wrap button,
-nav,
-.mobile-navigation a {
+.cta-explore {
   text-transform: uppercase;
 }
 
-.titles {
-  font-weight: var(--w4);
-}
-
-.games-list-container h1,
-.trending-now-container h2,
-.new-releases-container h2,
 .hero-image-container h1 {
+  font-size: var(--s28);
   font-weight: var(--w6);
 }
 
-.reviews-container h3,
-.cta-explore {
-  font-size: var(--s21);
-}
-
-.games-list-container h1,
-.trending-now-container h2,
-.new-releases-container h2,
-.prices,
-.titles,
-.hero-image-container h1 {
-  font-size: var(--s28);
-}
-
-.games-list-container,
-.trending-now-container,
-.reviews-container,
-.new-releases-container,
-.titles {
-  text-align: center;
-}
-
-.titles {
-  white-space: nowrap;
-}
-
-blockquote p::before {
-  content: '\201C';
-}
-
-blockquote p::after {
-  content: '\201D';
-}
 
 /* 
 4.  Colors
 */
 
-.overlay {
-  opacity: 25%;
+nav a:hover {
+  color: var(--hover-bg);
+  transition: 300ms;
 }
 
-.advert section,
-.overlay {
-  background-color: var(--black);
+.slider-2,
+.slider-1 {
+  color: var(--dark-blue);
 }
 
-.reviews-wrap figure blockquote,
-.mobile-navigation {
+.cta-explore {
+  color: var(--fancy-green);
+}
+
+div .cta-explore {
+  border-color: var(--light-blue);
+}
+
+nav {
   background-color: var(--light-blue);
 }
 
@@ -270,42 +231,27 @@ main {
   background-color: var(--dark-blue);
 }
 
-.search,
-.quest-wrap {
+.overlay {
+  background-color: var(--black);
+  opacity: 50%;
+}
+
+.slider-2,
+.slider-1 {
   background-color: var(--white-f2);
 }
 
-.breadcrumb span,
-.cta-explore,
-.active {
-  color: var(--fancy-green);
-}
-
-.breadcrumb a:hover,
-footer a:hover,
-.heading-right a:hover,
-nav a:hover,
-.mobile-navigation a:hover {
-  color: var(--hover-bg);
+.slider-1:hover,
+.slider-2:hover {
+  background-color: var(--hover-bg);
   transition: 500ms;
 }
 
-input,
-.quest-wrap {
-  color: var(--dark-blue);
+.fa-duotone {
+  --fa-primary-color: var(--dark-green); 
+  --fa-secondary-color: var(--fancy-green)
 }
 
-input {
-  caret-color: var(--dark-blue);
-}
-
-main .cta-explore {
-  border-color: var(--light-blue);
-}
-
-aside .cta-advert {
-  border-color: var(--fancy-green);
-}
 
 
 /* 
@@ -318,194 +264,113 @@ aside .cta-advert {
 /* 
 6.  Flex
 */
-figure,
-.flex,
-.search-container,
-.mobile-navigation,
-.hamburger-wrap-2,
-.mobile-navigation ul,
-.logo-container,
-.hamburger-wrap {
+
+.flex {
   display: flex;
 }
 
-.title-container,
-figure,
-footer,
-.reviews-container,
-.advert section,
-.game-card section,
-.hero-image-container,
-.mobile-navigation,
-.mobile-navigation ul {
+.flex-col {
   flex-direction: column;
 }
 
-.games-list-container,
-footer div,
-.trending-now-container,
-.new-releases-container {
-  flex-wrap: wrap;
-}
-
-.title-container,
-.games-list-container,
-.trending-now-container,
-.advert section,
+.hero-image-container,
 .new-releases-container,
-.quest-wrap,
-.hamburger-wrap-2,
-.logo-container,
-.hamburger-wrap {
+.trending-now-container,
+.logo-container {
   justify-content: center;
 }
 
-.hero-image-container section,
-.hero-image-container div {
+.slider-2 i,
+.slider-1 i,
+.slider-2 h2,
+.slider-1 h2 {
   justify-content: flex-end;
 }
 
-.breadcrumb {
-  justify-content: flex-start;
-}
-
-figure,
-footer,
-.advert section,
-.game-card section,
-.hero-image-container section,
-.quest-wrap,
-.hamburger-wrap-2,
-.logo-container,
-.hamburger-wrap {
-  align-items: center;
-}
-
-.hero-image-container div {
+.hero-image-container {
   align-items: flex-end;
 }
 
-.mobile-navigation ul {
-  gap: 5px;
+.slider-2,
+.slider-1 {
+  align-items: center;
 }
 
-.mobile-navigation {
-  gap: 10px;
+.new-releases-container,
+.trending-now-container {
+  flex-wrap: wrap;
 }
 
-.title-container,
-.ftr-socials,
-.reviews-container,
-.game-card section {
+nav,
+nav ul {
   gap: 20px;
 }
 
-.ftr-links {
-  gap: 30px;
-}
-
-footer {
+.trending-now-container,
+.new-releases-container {
   gap: 40px;
 }
 
-.advert section {
-  gap: 60px;
+.hero-image-container {
+  gap: 50vh;
 }
 
-.games-list-container,
-.trending-now-container,
-.new-releases-container {
-  row-gap: 60px;
-  column-gap: 100px;
-}
-
-.advert div,
-.advert section,
-.hero-image-container section,
-.hero-image-container div,
-main {
+.slider-2 i,
+.slider-1 i {
   flex: 1;
 }
 
-.games-list-container h1,
-.trending-now-container h2,
-.new-releases-container h2 {
-  flex: 100%;
+.slider-2 h2,
+.slider-1 h2 {
+  flex: 14;
 }
-
 
 /* 
 7.  Layout
 */
 
-.hidden,
-.search-btn-wrap,
-.heading-right {
+.heading-right,
+.hidden {
   display: none;
 }
 
-.hamburger-wrap-2,
-.hamburger-wrap {
-  width: 28px;
-  height: 32px;
+nav {
+  height: 100vh;
+  width: clamp(100px, 40%, 420px);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrap {
+  height: 100px;
+}
+
+.slider-2,
+.slider-1 {
+  width: 700px;
 }
 
 .logo {
   height: 80px;
 }
 
-.mobile-navigation {
-  height: 100vh;
-  width: 60%;
-}
-
-.overlay {
-  height: 100%;
-}
-
-.breadcrumb,
-.search-wrap,
-.search,
-.overlay {
-  width: 100%;
-}
-
-.quest-wrap {
-  width: 50px;
-}
-
-.game-card {
-  width: 215px;
-}
-
-blockquote {
-  max-width: 500px;
-}
-
-
-.search {
-  height: 48px;
-  border: 0;
-}
-
-.cta-advert,
 .cta-explore {
   border: 2px solid;
   border-radius: var(--r8);
 }
 
-.cta-advert,
-.cta-explore,
-.reviews-wrap figure blockquote {
-  border-radius: var(--r8);
+.slider-2,
+.slider-1 {
+  border-radius: 0 50px 50px 0;
 }
 
-.search {
-  border-radius: 0 5px 5px 0;
-}
-
-.quest-wrap {
-  border-radius: 5px 0 0 5px;
+.slider-1,
+.slider-2,
+.hamburger-wrap-2 {
+  cursor: pointer;
 }
 
 .hero-image-container {
@@ -520,100 +385,91 @@ blockquote {
 8.  Positioning
 */
 
-
+.slider-wrap,
+.logo-container,
 body,
-header,
-.logo-container {
+header {
   position: relative;
 }
 
-.mobile-navigation,
+.slider-2,
+.slider-1,
+.hamburger-wrap,
 .overlay,
-.hamburger-wrap {
+nav {
   position: absolute;
 }
 
-.logo-container {
-  z-index: 1;
+.overlay,
+nav {
+  top: 0;
+}
+
+.slider-2 {
+  top: 50px;
+}
+
+.hamburger-wrap,
+.overlay {
+  left: 0;
+}
+
+.slider-1 {
+  right: 50px
+}
+
+.slider-2 {
+  left: -650px;
+}
+
+.hamburger-wrap {
+  z-index: 8;
 }
 
 .overlay {
   z-index: 9;
-  top: 0;
-  left: 0;
 }
 
-.mobile-navigation,
-.hamburger-wrap {
+nav {
   z-index: 10;
 }
-
-.hamburger-wrap {
-  top: 10px;
-  left: 10px;
-}
-
 
 /* 
 9. Padding
 */
 
-.mobile-navigation,
-.mobile-navigation li a,
-.mobile-navigation li {
+.hamburger-wrap {
   padding: 10px;
 }
 
-.reviews-wrap figure blockquote {
-  padding: 16px;
+nav {
+  padding: 20px;
 }
 
-.search-container {
-  padding: 20px
+nav a {
+  padding: 10px 15px;
 }
 
+.slider-2 i,
+.slider-1 i,
 .hero-image-container {
-  padding: 0 50px 50px 0;
+  padding-right: 20px;
 }
 
-.cta-advert,
 .cta-explore {
   padding: 10px 20px;
 }
 
-.games-list-container,
-.trending-now-container,
-.reviews-container,
-.new-releases-container {
-  padding: 60px 20px;
+.slider-wrap {
+  padding: 20px 0 ;
 }
 
-footer,
-.game-card section {
-  padding: 20px 0;
-}
-
-.ad-title {
-  padding: 30px 0;
-}
-
-.title-container section,
-.title-image {
-  padding: 10px 30px;
-}
-
-.breadcrumb {
-  padding-left: 15px;
-}
 
 
 /* 
 10. Margin
 */
 
-blockquote {
-  margin: 0;
-}
 
 /* 
 11. @Media
@@ -625,175 +481,32 @@ blockquote {
   3.  Typography
   */
 
-  .search-btn-wrap button {
-    font-size: var(--s21);
-  }
 
 
   /* 
   4.  Colors
   */
 
-  .search-btn-wrap {
-    background-color: var(--white-f2);
-  }
-
-  .search-btn-wrap button {
-    color: var(--dark-blue);
-  }
-
-  .search-btn-wrap button:hover {
-    color: var(--hover-bg);
-    background-color: var(--dark-green);
-    transition: 500ms;
-  }
-
-  .cart {
-    color: var(--fancy-green);
-  }
-
-  header nav li{
-    border-color: var(--dark-blue);
-  }
-
-  .blue {
-    background-color: var(--dark-blue);
-  }
-
-  .blue a {
-    color: var(--white-f2);
-  }
 
   
   /* 
   6.  Flex
   */
 
-  .search-btn-wrap,
-  .heading-right p,
-  .heading-top,
-  nav {
-    display: flex
-  }
-
-  nav ul {
-    display: inline-flex;
-  }
-
-  .heading-right p {
-    gap: 30px;
-  }
-
-  .search-btn-wrap {
-    justify-content: center;
-  }
-
-  nav,
-  .logo-container {
-    justify-content:  start;
-  }
-
-  .heading-right p {
-    justify-content: flex-end;
-  }
-
-  .search-btn-wrap,
-  .heading-top {
-    align-items: center;
-  }
-
-  .heading-right,
-  .logo-container {
-    flex: 1;
-  }
-
 
   /* 
   7.  Layout
   */
-  .hamburger-wrap {
-    display: none;
-  }
-  
-  .heading-right {
-    display: block;
-  }
-
-  .logo {
-    height: 150px;
-  }
-
-  .search-btn-wrap {
-    width: 100px;
-  }
-
-  .search {
-    border-radius: 0;
-  }
-
-  .search-btn-wrap {
-    border-radius: 0 5px 5px 0;
-  }
-
-  .search-btn-wrap button {
-    border: 0;
-    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  nav li {
-    border: 2px solid;
-    border-radius: 25px 25px 0 0;
-  }
 
 
   /* 
   8.  Positioning
   */
 
-  .cart-wrap {
-    position: relative;
-  }
-
-  .cart {
-    position: absolute;
-    right: -8px;
-    top: -10px;
-    z-index: 5;
-  }
-
 
   /*
   9.  Padding
   */
-  nav {
-    padding-top: 20px;
-  }
-
-  nav li {
-    padding: 16px 32px;
-  }
-
-  .search-container {
-    padding: 20px 100px
-  }
-
-  nav a {
-    padding: 10px 20px;
-  }
-
-  header {
-    padding: 20px 20px 0 0;
-  }
-
-  .heading-right {
-    padding: 0 20px 0 0;
-  }
-
-  .hero-image-container {
-    padding: 0 100px 100px 0;
-  }
 
 
   /* 
@@ -806,27 +519,6 @@ blockquote {
 
 @media (min-width: 900px) {
 
-  .mid-section-home {
-    align-items: center;
-  }
-
-  .advert {
-    max-width: 550px;
-    max-height: 550px;
-  }
-
-  .mid-section-home {
-    display: flex;
-  }
-
-  .advert,
-  .reviews-container {
-    flex: 1;
-  }
-
-  .search-container {
-    padding: 20px 200px
-  }
 
 
 }

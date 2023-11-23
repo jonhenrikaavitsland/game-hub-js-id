@@ -16,11 +16,29 @@
   <body>
     <div class="overlay hidden"></div>
     <header>
-      <div role="navigation" class="mobile-navigation hidden">
+      <div class="heading-top">
+        <div class="logo-container flex">
+          <div class="hamburger-wrap">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <img src="./../../images/logo-unchecked.png" alt="game hub" class="logo">
+        </div>
+        <div class="heading-right">
+          <p>
+            <a href="#">Sign in / Register</a>
+            <span class="cart-wrap">
+              <a href="./../cart/">Cart
+                <span class="cart">0</span>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <nav class="hidden flex flex-col">
         <div class="hamburger-wrap-2">
           <i class="fa-solid fa-xmark"></i>
         </div>
-        <ul>
+        <ul class="flex flex-col">
           <li>
             <a href="./../../index.html">Home</a>
           </li>
@@ -38,40 +56,6 @@
           </li>
           <li>
             <a href="#" class="active">Account</a>
-          </li>
-        </ul>
-      </div>
-      <div class="heading-top">
-        <div class="logo-container">
-          <div class="hamburger-wrap">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <img src="./../../images/logo-unchecked.png" alt="game hub" class="logo">
-        </div>
-        <div class="heading-right">
-          <p>
-            <a href="#">Sign in / Register</a>
-            <span class="cart-wrap">
-              <a href="./../cart/">Cart
-                <span class="cart">0</span>
-              </a>
-            </span>
-          </p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./../../index.html">Home</a>
-          </li>
-          <li>
-            <a href="./../games/">Games</a>
-          </li>
-          <li>
-            <a href="./../about/">About</a>
-          </li>
-          <li>
-            <a href="./../contact/">Contact</a>
           </li>
         </ul>
       </nav>

@@ -7,12 +7,6 @@ import { createErrorMessage } from "../error/createMessage.js";
 const parentNewReleases = document.querySelector(".new-releases-container");
 const parentTrendingNow = document.querySelector(".trending-now-container");
 
-const headingNewReleases = "New Releases";
-const headingTrendingNow = "Trending Now";
-
-function renderHeading(heading, parent) {
-  parent.innerHTML = `<h2>${heading}</h2>`;
-}
 
 export async function createHome() {
   try {
@@ -20,10 +14,8 @@ export async function createHome() {
     const newReleases = filterNewReleases(games);
     const trendingNow = filterTrendingNow(games);
     clearReleaseList(parentNewReleases);
-    renderHeading(headingNewReleases, parentNewReleases);
     renderReleases(newReleases, parentNewReleases);
     clearReleaseList(parentTrendingNow);
-    renderHeading(headingTrendingNow, parentTrendingNow);
     renderReleases(trendingNow, parentTrendingNow);
   } catch (error) {
     console.log("An error occurred", error);

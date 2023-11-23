@@ -17,10 +17,10 @@ overlay.addEventListener("click", closeMenu);
 
 switch (location.pathname) {
   case "/pages/games/title/":
-    createTitle();
+    // createTitle();
     break;
   case "/pages/games/":
-    createGames();
+    // createGames();
     break;
   default:
     createHome();

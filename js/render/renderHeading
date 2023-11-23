@@ -1,3 +1,0 @@
-export function renderHeading(heading, parent, h) {
-  parent.innerHTML = `<h${h}>${heading}</${h}>`;
-}

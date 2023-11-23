@@ -16,11 +16,29 @@
   <body>
     <div class="overlay hidden"></div>
     <header>
-      <div role="navigation" class="mobile-navigation hidden">
+      <div class="heading-top">
+        <div class="logo-container flex">
+          <div class="hamburger-wrap">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <img src="./images/logo-unchecked.png" alt="game hub" class="logo">
+        </div>
+        <div class="heading-right">
+          <p>
+            <a href="./pages/account/">Sign in / Register</a>
+            <span class="cart-wrap">
+              <a href="./pages/cart/">Cart
+                <span class="cart">0</span>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <nav class="hidden flex flex-col">
         <div class="hamburger-wrap-2">
           <i class="fa-solid fa-xmark"></i>
         </div>
-        <ul>
+        <ul class="flex flex-col">
           <li>
             <a href="./index.html" class="active">Home</a>
           </li>
@@ -40,44 +58,10 @@
             <a href="./pages/account/">Account</a>
           </li>
         </ul>
-      </div>
-      <div class="heading-top">
-        <div class="logo-container">
-          <div class="hamburger-wrap">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <img src="./images/logo-unchecked.png" alt="game hub" class="logo">
-        </div>
-        <div class="heading-right">
-          <p>
-            <a href="./pages/account/">Sign in / Register</a>
-            <span class="cart-wrap">
-              <a href="./pages/cart/">Cart
-                <span class="cart">0</span>
-              </a>
-            </span>
-          </p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li class="blue">
-            <a href="./index.html" class="active">Home</a>
-          </li>
-          <li>
-            <a href="./pages/games/">Games</a>
-          </li>
-          <li>
-            <a href="./pages/about/">About</a>
-          </li>
-          <li>
-            <a href="./pages/contact/">Contact</a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main>
-      <div class="hero-image-container flex">
+      <div class="hero-image-container flex flex-col">
         <section class="flex">
           <h1>Ready to play?</h1>
         </section>
@@ -85,15 +69,14 @@
           <a href="./pages/games/" class="cta cta-explore">Explore</a>
         </div>
       </div>
-      <div class="search-container">
-        <div class="quest-wrap flex">
-          <i class="fa-solid fa-question"></i>
+      <div class="slider-wrap flex">
+        <div class="slider-1 flex">
+          <h2 class="flex">New Releases</h2>
+          <i class="fa-duotone fa-chevrons-left flex"></i>
         </div>
-        <div class="search-wrap">
-          <input type="text" name="search" id="search" placeholder="Search our games..." class="search">
-        </div>
-        <div class="search-btn-wrap">
-          <button>go</button>
+        <div class="slider-2 flex">
+          <h2 class="flex">Trending now</h2>
+          <i class="fa-duotone fa-chevrons-right flex"></i>
         </div>
       </div>
       <section class="new-releases-container flex">
@@ -112,17 +95,24 @@
           <div></div>
         </div>
       </section>
+      <section class="trending-now-container flex">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
       <div class="mid-section-home">
-        <aside class="advert flex">
-          <div class="flex">
-            <img src="./images/ad-img.jpg" alt="gamer looking at the camera">
-          </div>
-          <section class="flex">
-            <h3 class="titles">Mike got 20%</h3>
-            <a href="./pages/account/" class="cta cta-advert">Get Yours</a>  
-          </section>
-        </aside>
-        <section class="reviews-container flex">
+        <section class="reviews-container flex flex-col">
           <h3>Reviews</h3>
           <div class="reviews-wrap">
             <figure>
@@ -151,25 +141,18 @@
               <i class="fa-solid fa-star"></i>
           </div>
         </section>
+        <aside class="advert flex">
+          <div class="flex">
+            <img src="./images/ad-img.jpg" alt="gamer looking at the camera">
+          </div>
+          <section class="flex">
+            <h3 class="titles">Mike got 20%</h3>
+            <a href="./pages/account/" class="cta cta-advert">Get Yours</a>  
+          </section>
+        </aside>
       </div>
-      <section class="trending-now-container flex">
-        <div class="lds-spinner">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
     </main>
-    <footer class="flex">
+    <footer class="flex flex-col">
       <div class="flex ftr-socials">
         <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
         <a href="http://www.linkedin.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
