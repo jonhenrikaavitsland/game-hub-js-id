@@ -39,22 +39,22 @@
           <i class="fa-solid fa-xmark"></i>
         </div>
         <ul class="flex flex-col">
-          <li>
-            <a href="./index.html" class="active">Home</a>
+          <li class="li-1 active">
+            <a href="./index.html">Home</a>
           </li>
-          <li>
+          <li class="li-2">
             <a href="./pages/games/">Games</a>
           </li>
-          <li>
+          <li class="li-3">
             <a href="./pages/about/">About</a>
           </li>
-          <li>
+          <li class="li-4">
             <a href="./pages/contact/">Contact</a>
           </li>
-          <li>
+          <li class="link-cart">
             <a href="./pages/cart/">Cart</a>
           </li>
-          <li>
+          <li class="link-acc">
             <a href="./pages/account/">Account</a>
           </li>
         </ul>
@@ -99,7 +99,7 @@
           <div></div>
         </div>
       </section>
-      <section class="trending-now-container flex">
+      <section class="trending-now-container flex hidden">
         <div class="lds-spinner">
           <div></div>
           <div></div>
@@ -117,7 +117,7 @@
       </section>
       <div class="mid-section-home">
         <section class="reviews-container flex flex-col">
-          <h3>Reviews</h3>
+          <h2>Reviews</h2>
           <div class="reviews-wrap">
             <figure>
               <blockquote>
@@ -145,15 +145,17 @@
               <i class="fa-solid fa-star"></i>
           </div>
         </section>
-        <aside class="advert flex">
-          <div class="flex">
-            <img src="./images/ad-img.jpg" alt="gamer looking at the camera">
-          </div>
-          <section class="flex">
-            <h3 class="titles">Mike got 20%</h3>
-            <a href="./pages/account/" class="cta cta-advert">Get Yours</a>  
-          </section>
-        </aside>
+        <a href="./pages/account/">
+          <aside class="advert flex">
+            <div class="flex">
+              <img src="./images/ad-img.jpg" alt="gamer looking at the camera">
+            </div>
+            <section class="flex flex-col">
+              <h3 class="titles">Mike is a member</h3>
+              <p>Sign up today</p>  
+            </section>
+          </aside>
+        </a>
       </div>
     </main>
     <footer class="flex flex-col">

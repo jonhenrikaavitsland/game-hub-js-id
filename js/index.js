@@ -6,14 +6,16 @@ import {
   closeMenu,
   closeMenuEsc,
 } from "./hamburgerMenu/menu.js";
-import { createHome } from "./pages/home.js";
+import { createHome, hideContainer, headingContainer } from "./pages/home.js";
 import { createGames } from "./pages/games.js";
 import { createTitle } from "./pages/title.js";
+import { setNavStyle } from "./config/setNav.js";
 
 menuIcon.addEventListener("click", openMenu);
 menuCloseIcon.addEventListener("click", closeMenu);
 document.addEventListener("keydown", closeMenuEsc);
 overlay.addEventListener("click", closeMenu);
+setNavStyle();
 
 switch (location.pathname) {
   case "/pages/games/title/":
@@ -23,7 +25,8 @@ switch (location.pathname) {
     // createGames();
     break;
   default:
-  createHome();
+    createHome();
+    headingContainer.addEventListener("click", hideContainer);
 }
 
 

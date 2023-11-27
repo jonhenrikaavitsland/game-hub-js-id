@@ -22,3 +22,19 @@ export async function createHome() {
     createErrorMessage(parentNewReleases, error, parentTrendingNow);
   }
 }
+
+export const headingContainer = document.querySelector(".headings");
+const headingH2 = document.querySelector(".headings h2");
+
+// Hides the alternating container of game-cards.
+export function hideContainer() {
+  if (headingH2.textContent === "New releases") {
+    headingH2.textContent = "Trending now";
+    parentNewReleases.classList.add("hidden");
+    parentTrendingNow.classList.remove("hidden");
+  } else {
+    headingH2.textContent = "New releases";
+    parentTrendingNow.classList.add("hidden");
+    parentNewReleases.classList.remove("hidden");
+  }
+}

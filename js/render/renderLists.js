@@ -27,10 +27,11 @@ export function createHtmlObject(release, page) {
   childUpperHalf.append(childImage);
 
   const childLowerHalf = document.createElement("div");
-  // childLowerHalf.classList.add("");
+  childLowerHalf.classList.add("game-card-lower-half-container");
   element.append(childLowerHalf);
 
   const childTitleInfoContainer = document.createElement("div");
+  childTitleInfoContainer.classList.add("title-info-container", "flex");
   childLowerHalf.append(childTitleInfoContainer);
 
   const childTitleSection = document.createElement("section");
@@ -52,6 +53,7 @@ export function createHtmlObject(release, page) {
   childTitleSection.append(childCategory);
 
   const childRatingContainer = document.createElement("div");
+  childRatingContainer.classList.add("star-container", "flex");
   childTitleSection.append(childRatingContainer);
 
   const childRating = document.createElement("i");
@@ -68,33 +70,46 @@ export function createHtmlObject(release, page) {
 
   const childAgeRating = document.createElement("span");
   childAgeRating.textContent = `${release.ageRating}`;
+  if (release.ageRating === "16+") {
+    childAgeRating.classList.add("age-rating-16");
+  } else if (release.ageRating === "18+") {
+    childAgeRating.classList.add("age-rating-18");
+  } else if (release.ageRating === "12+") {
+    childAgeRating.classList.add("age-rating-12");
+  } else {
+    childAgeRating.classList.add("age-rating-3");
+  }
   childAgeRatingContainer.append(childAgeRating);
 
   const childSaleContainer = document.createElement("div");
+  childSaleContainer.classList.add("sale-container", "flex", "flex-col");
   childLowerHalf.append(childSaleContainer);
 
   const childPriceContainer = document.createElement("div");
+  childPriceContainer.classList.add("price-container", "flex", "flex-col");
   childSaleContainer.append(childPriceContainer);
 
   let childPrice = document.createElement("p");
   if (`${release.onSale}`) {
-    childPrice.textContent = `${release.discountedPrice}`;
+    childPrice.textContent = `$ ${release.discountedPrice}`;
   } else {
-    childPrice.textContent = `${release.price}`;
+    childPrice.textContent = `$ ${release.price}`;
   }
-  childSaleContainer.append(childPrice);
+  childPrice.classList.add("price");
+  childPriceContainer.append(childPrice);
 
   let childPriceBefore = document.createElement("p");
-  childPriceBefore.textContent = `${release.price}`;
-  childPriceBefore.classList.add("hidden");
+  childPriceBefore.textContent = `$ ${release.price}`;
+  childPriceBefore.classList.add("hidden", "price-before");
   if (`${release.price}` !== `${release.discountedPrice}`) {
     childPriceBefore.classList.remove("hidden");
   }
-  childSaleContainer.append(childPriceBefore);
+  childPriceContainer.append(childPriceBefore);
 
   const childButton = document.createElement("a");
   childButton.classList.add("cta", "cta-explore");
   childButton.textContent = "explore";
+  childButton.setAttribute("id", "cta-game-card");
   childButton.href = linkUrl;
   childSaleContainer.append(childButton);
 

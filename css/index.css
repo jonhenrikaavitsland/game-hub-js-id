@@ -29,6 +29,9 @@ Table of Contents::after
   --red: #f3a8a8;
   --light-blue: #2d3e77;
   --hover-bg: #B1DBAD;
+  --rating-12-16: #F79E1B;
+  --rating18: #EB001B;
+
 
   /* Typography */
   --montserrat: "Montserrat", sans-serif;
@@ -186,14 +189,67 @@ body {
 3.  Typography
 */
 
+nav,
+.title-info-container h2,
+.title-info-container h3,
 .cta-explore {
   text-transform: uppercase;
 }
 
+.price,
+.price-before,
+.title-info-container h2,
+.title-info-container h3,
+.age-rating-container span {
+  font-family: var(--teko);
+}
+
+.reviews-container h2,
 .headings h2,
+.sale-container a {
+  font-size: var(--s21);
+}
+
+.price,
+.title-info-container h2,
+.title-info-container h3,
+.age-rating-container span,
 .hero-image-container h1 {
   font-size: var(--s28);
+}
+
+.title-info-container h2,
+.title-info-container h3 {
+  font-weight: var(--w4);
+}
+
+.age-rating-container span {
+  font-weight: var(--w5);
+}
+
+.reviews-container h2,
+.headings h2,
+.hero-image-container h1 {
   font-weight: var(--w6);
+}
+
+.price,
+.title-info-container h2,
+.title-info-container h3,
+.title-info-container p {
+  line-height: 0.7;
+}
+
+.price-before {
+  text-decoration: line-through;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
 }
 
 
@@ -201,15 +257,24 @@ body {
 4.  Colors
 */
 
+#cta-game-card {
+  color: var(--white-f2);
+  border-color: var(--white-f2);
+}
+
 nav a:hover {
   color: var(--hover-bg);
   transition: 300ms;
 }
 
+.active,
+.price,
+.title-info-container i,
 .cta-explore {
   color: var(--fancy-green);
 }
 
+.age-rating-3,
 .heading-wrap {
   color: var(--dark-blue);
 }
@@ -222,6 +287,8 @@ div .cta-explore {
   border-color: var(--light-blue);
 }
 
+blockquote p,
+.game-card,
 nav {
   background-color: var(--light-blue);
 }
@@ -231,19 +298,33 @@ main {
   background-color: var(--dark-blue);
 }
 
+.age-rating-3,
 .error,
 .heading-wrap {
   background-color: var(--white-f2);
 }
 
+aside,
 .overlay {
   background-color: var(--black);
+}
+
+.overlay {
   opacity: 50%;
 }
 
 .heading-wrap:hover {
   background-color: var(--hover-bg);
   transition: 500ms;
+}
+
+.age-rating-12,
+.age-rating-16 {
+  background-color: var(--rating-12-16);
+}
+
+.age-rating-18 {
+  background-color: var(--rating18);
 }
 
 .fa-duotone {
@@ -274,6 +355,7 @@ main,
   flex-direction: column;
 }
 
+.advert section,
 .headings,
 .heading-container,
 .hero-image-container,
@@ -283,24 +365,44 @@ main,
   justify-content: center;
 }
 
+footer,
+.advert section,
+.reviews-container,
+.sale-container,
+.star-container,
 .heading-wrap {
   align-items: center;
 }
 
+.price-container,
+.title-info-container,
 .hero-image-container {
   align-items: flex-end;
 }
 
+.ftr-socials,
+.ftr-links,
 .new-releases-container,
 .trending-now-container {
   flex-wrap: wrap;
 }
 
+footer,
+.sale-container,
+.star-container {
+  gap: 5px;
+}
+
+.ftr-links,
+.ftr-socials,
 nav,
 nav ul {
   gap: 20px;
 }
 
+
+.advert section,
+.reviews-container,
 .trending-now-container,
 .new-releases-container {
   gap: 40px;
@@ -310,6 +412,9 @@ nav ul {
   gap: 50vh;
 }
 
+.advert div,
+.advert section,
+.title-info-container section,
 main,
 .headings {
   flex: 1;
@@ -338,10 +443,29 @@ nav {
   height: 80px;
 }
 
+.game-card {
+  width: 250px;
+}
+
 .error,
 .cta-explore {
   border: 2px solid;
+}
+
+.sale-container .cta-explore {
+  border-radius: 5px;
+}
+
+blockquote p,
+.game-card,
+.error,
+.cta-explore {
   border-radius: var(--r8);
+}
+
+
+.game-card-img-wrap img {
+  border-radius: 8px 8px 0 0;
 }
 
 .heading-wrap {
@@ -366,6 +490,7 @@ nav {
 8.  Positioning
 */
 
+.game-card-img-wrap,
 .logo-container,
 body,
 header {
@@ -400,12 +525,22 @@ nav {
   z-index: 10;
 }
 
+
 /* 
 9. Padding
 */
 
+.game-card-img-wrap {
+  padding: 5px;
+}
+
+footer,
 .hamburger-wrap {
   padding: 10px;
+}
+
+.game-card-lower-half-container {
+  padding: 0 10px 10px 10px;
 }
 
 .error,
@@ -425,6 +560,11 @@ nav a {
   padding: 10px 20px;
 }
 
+.sale-container .cta-explore {
+  padding: 5px 10px ;
+}
+
+.sale-container,
 .heading-container {
   padding: 20px 0;
 }
@@ -433,6 +573,21 @@ nav a {
   padding: 0 10px;
 }
 
+.age-rating-container span {
+  padding: 0 6px;
+}
+
+.title-info-container {
+  padding: 5px 0;
+}
+
+blockquote p {
+  padding: 1rem;
+}
+
+.reviews-container {
+  padding: 100px 10vw 60px 10vw;
+}
 
 
 
@@ -444,11 +599,20 @@ nav a {
   margin: 20px;
 }
 
+blockquote,
+figure {
+  margin: 0;
+}
+
+aside {
+  margin: 0 0 60px 0;
+}
+
 /* 
 11. @Media
 */
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
   /* 
   3.  Typography
@@ -460,27 +624,72 @@ nav a {
   4.  Colors
   */
 
+  .active {
+    background-color: var(--dark-blue);
+    color: var(--white-f2);
+  }
+
+  .cart {
+    color: var(--fancy-green);
+  }
+
 
   
   /* 
   6.  Flex
   */
 
+  .logo-container {
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .heading-top {
+    display: flex;
+  }
+
 
   /* 
   7.  Layout
   */
+
+  .heading-right {
+    display: block;
+  }
+
+  .hamburger-wrap {
+    display: none;
+  }
+
+  .logo {
+    height: 150px;
+  }
+
 
 
   /* 
   8.  Positioning
   */
 
+  .cart-wrap a {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cart {
+    position: absolute;
+    top: -13px;
+    left: 30px;
+    z-index: 5;
+  }
 
   /*
   9.  Padding
   */
 
+  .heading-right {
+    padding: 20px 20px 0 0;
+  }
 
   /* 
   10. Margin
@@ -490,7 +699,7 @@ nav a {
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 1120px) {
 
 
 
