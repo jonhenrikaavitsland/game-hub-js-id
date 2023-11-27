@@ -9,13 +9,14 @@ import {
 import { createHome, hideContainer, headingContainer } from "./pages/home.js";
 import { createGames } from "./pages/games.js";
 import { createTitle } from "./pages/title.js";
-import { setNavStyle } from "./config/setNav.js";
+import { setNavStyle, landscape } from "./config/setNav.js";
 
+setNavStyle();
+landscape.addEventListener("change", setNavStyle);
 menuIcon.addEventListener("click", openMenu);
 menuCloseIcon.addEventListener("click", closeMenu);
 document.addEventListener("keydown", closeMenuEsc);
 overlay.addEventListener("click", closeMenu);
-setNavStyle();
 
 switch (location.pathname) {
   case "/pages/games/title/":

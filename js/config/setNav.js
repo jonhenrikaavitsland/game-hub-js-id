@@ -1,4 +1,3 @@
-const windowInnerWidth = document.documentElement.clientWidth;
 const navElement = document.querySelector("nav");
 const navBar = document.querySelector("nav ul");
 const navBarLink = document.querySelectorAll("nav ul li");
@@ -6,9 +5,11 @@ const navBarAnchor = document.querySelectorAll("nav ul li a");
 const closeButton = document.querySelector(".hamburger-wrap-2");
 const linkCart = document.querySelector(".link-cart");
 const linkAccount = document.querySelector(".link-acc");
-const topRightLinks = document.querySelector(".heading-right");
+
+export let landscape = window.matchMedia("(orientation: landscape)");
 
 export function setNavStyle() {
+  const windowInnerWidth = document.documentElement.clientWidth;
   if (windowInnerWidth >= 800) {
     navElement.classList.remove("hidden");
     closeButton.classList.add("hidden");
@@ -29,7 +30,26 @@ export function setNavStyle() {
     navBarAnchor.forEach(function (a) {
       a.style.padding = 0;
     });
-    topRightLinks.classList.remove("hidden");
-  } else {
+  } else if (windowInnerWidth <= 799) {
+    navElement.classList.add("hidden");
+    closeButton.classList.remove("hidden");
+    navElement.style.backgroundColor = "var(--light-blue)";
+    navElement.style.position = "absolute";
+    navElement.style.padding = "20px";
+    linkCart.classList.remove("hidden");
+    linkAccount.classList.remove("hidden");
+    navElement.style.height = "100vh";
+    navBar.classList.add("flex-col");
+    navBar.style.gap = "20px";
+    navBarLink.forEach(function (li) {
+      li.style.border = "";
+      li.style.borderRadius = "";
+      li.style.padding = "";
+      li.style.borderColor = "";
+    });
+    navBarAnchor.forEach(function (a) {
+      a.style.padding = "10px 15px";
+    });
   }
+  console.log(windowInnerWidth);
 }
