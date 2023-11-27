@@ -23,7 +23,7 @@ switch (location.pathname) {
     // createTitle();
     break;
   case "/pages/games/":
-    // createGames();
+    createGames();
     break;
   default:
     createHome();

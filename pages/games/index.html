@@ -39,37 +39,39 @@
           <i class="fa-solid fa-xmark"></i>
         </div>
         <ul class="flex flex-col">
-          <li>
+          <li class="li-1">
             <a href="./../../index.html">Home</a>
           </li>
-          <li>
-            <a href="#" class="active">Games</a>
+          <li class="li-2 active">
+            <a href="#">Games</a>
           </li>
-          <li>
+          <li class="li-3">
             <a href="./../about/">About</a>
           </li>
-          <li>
+          <li class="li-4">
             <a href="./../contact/">Contact</a>
           </li>
-          <li>
+          <li class="link-cart">
             <a href="./../cart/">Cart</a>
           </li>
-          <li>
+          <li class="link-acc">
             <a href="./../account/">Account</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="search-container">
-        <div class="quest-wrap flex">
-          <i class="fa-solid fa-question"></i>
-        </div>
-        <div class="search-wrap">
-          <input type="text" name="search" id="search" placeholder="Search our games..." class="search">
-        </div>
-        <div class="search-btn-wrap">
-          <button>go</button>
+      <div class="search-container-wrap flex">
+        <div class="search-container flex">
+          <div class="quest-wrap flex">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div class="search-wrap">
+            <input type="text" name="search" id="search" placeholder="Search our games..." class="search">
+          </div>
+          <div class="search-btn-wrap">
+            <button>go</button>
+          </div>
         </div>
       </div>
       <section class="games-list-container flex">
@@ -89,17 +91,8 @@
         </div>
       </section>
       <div class="mid-section-home">
-        <aside class="advert flex">
-          <div class="flex">
-            <img src="./../../images/ad-img.jpg" alt="gamer looking at the camera">
-          </div>
-          <section class="flex">
-            <h3 class="titles">Mike got 20%</h3>
-            <a href="./../account/" class="cta cta-advert">Get Yours</a>  
-          </section>
-        </aside>
-        <section class="reviews-container flex">
-          <h3>Reviews</h3>
+        <section class="reviews-container flex flex-col">
+          <h2>Reviews</h2>
           <div class="reviews-wrap">
             <figure>
               <blockquote>
@@ -107,10 +100,10 @@
               </blockquote>
               <figcaption>—Stine Wellington, <cite>Furious</cite></figcaption>
             </figure>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
           <div class="reviews-wrap">
             <figure>
@@ -119,16 +112,25 @@
               </blockquote>
               <figcaption>—Eric Loft, <cite>Space War</cite></figcaption>
             </figure>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
         </section>
+        <aside class="advert flex">
+          <div class="flex">
+            <img src="./../../images/ad-img.jpg" alt="gamer looking at the camera">
+          </div>
+          <section class="flex flex-col">
+            <h3 class="titles">Mike is a member</h3>
+            <p>Sign up today</p>  
+          </section>
+        </aside>
       </div>
     </main>
-    <footer class="flex">
+    <footer class="flex flex-col">
       <div class="flex ftr-socials">
         <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
         <a href="http://www.linkedin.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
@@ -142,7 +144,5 @@
         <a href="./pages/contact/">Contact Us</a>
       </div>
     </footer>
-  </body>
-</html>
   </body>
 </html>
