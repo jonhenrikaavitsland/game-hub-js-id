@@ -189,6 +189,7 @@ body {
 3.  Typography
 */
 
+
 .games-list-container h1 {
   text-align: center;
 }
@@ -280,6 +281,7 @@ nav a:hover {
   color: var(--fancy-green);
 }
 
+.filter-options-container,
 .age-rating-3,
 .heading-wrap {
   color: var(--dark-blue);
@@ -308,6 +310,7 @@ main {
   background-color: var(--dark-blue);
 }
 
+.filter-options-container,
 .search-wrap input,
 .search-container,
 .age-rating-3,
@@ -379,6 +382,11 @@ main,
   justify-content: center;
 }
 
+.filter-wrap {
+  justify-content: flex-end;
+}
+
+.filter-options-container,
 .search-container,
 footer,
 .advert section,
@@ -409,6 +417,7 @@ footer,
   gap: 5px;
 }
 
+.filter-options-container,
 .search-container {
   gap: 10px;
 }
@@ -432,6 +441,7 @@ nav ul {
   gap: 50vh;
 }
 
+.filter-options-container p,
 .search-wrap,
 .advert div,
 .advert section,
@@ -488,6 +498,13 @@ nav {
   width: 100%;
 }
 
+.filter-options-container {
+  width: 115px;
+  height: 32px;
+
+}
+
+.filter-options-container,
 .search-container,
 .sale-container .cta-explore {
   border-radius: 5px;
@@ -510,6 +527,7 @@ blockquote p,
   width: 80%;
 }
 
+.filter-options-container button,
 .heading-wrap,
 .hamburger-wrap-2 {
   cursor: pointer;
@@ -611,6 +629,7 @@ nav a {
   padding: 0 10px;
 }
 
+.filter-options-container,
 .age-rating-container span {
   padding: 0 6px;
 }
@@ -633,6 +652,10 @@ blockquote p {
   padding: 0 5vw;
 }
 
+.filter-wrap {
+  padding-right: 10vw;
+}
+
 
 /* 
 10. Margin
@@ -652,7 +675,7 @@ aside {
 }
 
 .search-container-wrap {
-  margin: 60px 0;
+  margin: 60px 0 30px 0;
 }
 
 /* 
