@@ -224,6 +224,7 @@ nav,
   font-size: var(--s28);
 }
 
+.filter-options-list p,
 .title-info-container h2,
 .title-info-container h3 {
   font-weight: var(--w4);
@@ -310,6 +311,7 @@ main {
   background-color: var(--dark-blue);
 }
 
+.filter-options-list,
 .filter-options-container,
 .search-wrap input,
 .search-container,
@@ -328,6 +330,7 @@ aside,
   opacity: 50%;
 }
 
+.filter-options-list p:hover,
 .heading-wrap:hover {
   background-color: var(--hover-bg);
   transition: 500ms;
@@ -411,6 +414,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.filter-options-list,
 footer,
 .sale-container,
 .star-container {
@@ -499,15 +503,22 @@ nav {
 }
 
 .filter-options-container {
-  width: 115px;
   height: 32px;
+}
 
+.filter-options-container,
+.filter-options-list {
+  width: 180px;
 }
 
 .filter-options-container,
 .search-container,
 .sale-container .cta-explore {
   border-radius: 5px;
+}
+
+.filter-options-list {
+  border-radius: 0 0 5px 5px;
 }
 
 blockquote p,
@@ -527,7 +538,8 @@ blockquote p,
   width: 80%;
 }
 
-.filter-options-container button,
+.filter-options-list p,
+.filter-options-container,
 .heading-wrap,
 .hamburger-wrap-2 {
   cursor: pointer;
@@ -544,7 +556,7 @@ blockquote p,
 /* 
 8.  Positioning
 */
-
+.filter-options-container,
 .game-card-img-wrap,
 .logo-container,
 body,
@@ -552,6 +564,7 @@ header {
   position: relative;
 }
 
+.filter-options-list,
 .hamburger-wrap,
 .overlay,
 nav {
@@ -578,6 +591,12 @@ nav {
 
 nav {
   z-index: 10;
+}
+
+.filter-options-list {
+  z-index: 5;
+  top: 28px;
+  left: 0;
 }
 
 
@@ -625,11 +644,11 @@ nav a {
   padding: 20px 0;
 }
 
+.filter-options-container,
 .headings-icon {
   padding: 0 10px;
 }
 
-.filter-options-container,
 .age-rating-container span {
   padding: 0 6px;
 }
@@ -654,6 +673,14 @@ blockquote p {
 
 .filter-wrap {
   padding-right: 10vw;
+}
+
+.filter-options-list {
+  padding: 10px 5px;
+}
+
+.filter-options-list p {
+  padding: 5px 0;
 }
 
 
