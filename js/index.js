@@ -10,6 +10,8 @@ import { createHome, hideContainer, headingContainer } from "./pages/home.js";
 import { createGames } from "./pages/games.js";
 import { createTitle } from "./pages/title.js";
 import { setNavStyle, landscape } from "./config/setNav.js";
+import { addFav, checkHeart } from "./heart/heart.js";
+import { getContainer } from "./data/getContainer.js";
 
 setNavStyle();
 landscape.addEventListener("change", setNavStyle);
@@ -21,6 +23,14 @@ overlay.addEventListener("click", closeMenu);
 switch (location.pathname) {
   case "/pages/games/title/":
     createTitle();
+    let heartContainer = "";
+    setTimeout(() => {
+      heartContainer = getContainer(".heart-container");
+    }, 1000);
+    setTimeout(() => checkHeart(), 1000);
+    setTimeout(() => {
+      heartContainer.addEventListener("click", addFav);
+    }, 1000);
     break;
   case "/pages/games/":
     createGames();
@@ -42,3 +52,5 @@ switch (location.pathname) {
 
 import { reviews } from "./data/getReviews.js";
 console.log(reviews);
+
+

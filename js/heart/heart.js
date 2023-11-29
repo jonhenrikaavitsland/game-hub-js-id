@@ -1,11 +1,22 @@
+// saves status to local storage and changes color of the heart based on status.
+
 export function addFav() {
-  if ((heart.style.color = "var(--white-f2)")) {
-    heart.style.color = "var(--rating18)";
+  const heart = document.querySelector(".fa-heart");
+  const id = document.querySelector(".title-section p");
+  if (localStorage.getItem(`fav${id.textContent}`) !== "yes") {
+    localStorage.setItem(`fav${id.textContent}`, "yes");
+    heart.style.color = "var(--fancy-green)";
   } else {
+    localStorage.setItem(`fav${id.textContent}`, "no");
     heart.style.color = "var(--white-f2)";
   }
 }
 
-// Rewrite to use local storage to show either white or red color.
-// When you click the icon you then save to local storage or if it is already saved we change it.
-// Also we need to put the heart icon inside a div so that it is possible to target it due to aria-hidden.
+// Checks the status of local storage as the page loads and if game is favored by the user in the past we change the color.
+export function checkHeart() {
+  const heart = document.querySelector(".fa-heart");
+  const id = document.querySelector(".title-section p");
+  if (localStorage.getItem(`fav${id.textContent}`) === "yes") {
+    heart.style.color = "var(--fancy-green)";
+  }
+}

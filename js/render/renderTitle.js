@@ -22,9 +22,13 @@ export function renderTitle(game, parent, title, data) {
   childTitle.textContent = `${game.title}`;
   titleWrap.append(childTitle);
 
+  const childHeartContainer = document.createElement("div");
+  childHeartContainer.classList.add("flex", "heart-container");
+  titleWrap.append(childHeartContainer);
+
   const childHeart = document.createElement("i");
   childHeart.classList.add("fa-solid", "fa-heart");
-  titleWrap.append(childHeart);
+  childHeartContainer.append(childHeart);
 
   const childProductId = document.createElement("p");
   const string = `${game.id}`;

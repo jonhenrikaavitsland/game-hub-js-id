@@ -105,10 +105,10 @@ export function createHtmlObject(release, page) {
 
   let childPriceBefore = document.createElement("p");
   childPriceBefore.textContent = `$ ${release.price}`;
-  childPriceBefore.classList.add("hidden", "price-before");
-  if (`${release.price}` !== `${release.discountedPrice}`) {
-    childPriceBefore.classList.remove("hidden");
-  }
+  childPriceBefore.classList.add("price-before");
+  // if (`${release.price}` !== `${release.discountedPrice}`) {
+  //   childPriceBefore.classList.remove("hidden");
+  // }
   childPriceContainer.append(childPriceBefore);
 
   const childButton = document.createElement("a");
