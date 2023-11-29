@@ -46,7 +46,6 @@ Table of Contents::after
 
   /* Border Radius */
   --r8: 0.5rem;
-
 }
 
 
@@ -189,11 +188,11 @@ body {
 3.  Typography
 */
 
-
 .games-list-container h1 {
   text-align: center;
 }
 
+.cta-sale,
 .title-section h1,
 nav,
 .title-info-container h2,
@@ -202,6 +201,8 @@ nav,
   text-transform: uppercase;
 }
 
+.title-price-before,
+.title-price,
 .title-section h1,
 .price,
 .price-before,
@@ -211,6 +212,7 @@ nav,
   font-family: var(--teko);
 }
 
+.cta-sale,
 .title-wrap i,
 .reviews-container h2,
 .headings h2,
@@ -218,6 +220,7 @@ nav,
   font-size: var(--s21);
 }
 
+.title-price,
 .title-section h1,
 .games-list-container h1,
 .price,
@@ -246,6 +249,8 @@ nav,
   font-weight: var(--w6);
 }
 
+
+.title-price,
 .title-section h1,
 .price,
 .title-info-container h2,
@@ -254,6 +259,11 @@ nav,
   line-height: 0.7;
 }
 
+#info-container p {
+  line-height: inherit;
+}
+
+.title-price-before,
 .price-before {
   text-decoration: line-through;
 }
@@ -276,6 +286,7 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.cta-sale,
 .fa-heart {
   color: var(--white-f2);
 }
@@ -285,6 +296,8 @@ nav a:hover {
   transition: 300ms;
 }
 
+.title-price,
+.cta-sale i,
 .stars-container i,
 .active,
 .price,
@@ -311,12 +324,17 @@ div .cta-explore {
   border-color: var(--light-blue);
 }
 
+.cta-sale {
+  border-color: var(--white-f2);
+}
+
 blockquote p,
 .game-card,
 nav {
   background-color: var(--light-blue);
 }
 
+.cta-sale,
 .cta-explore,
 main {
   background-color: var(--dark-blue);
@@ -384,6 +402,7 @@ main,
   flex-direction: column;
 }
 
+.product-image-container,
 .title-container,
 .games-list-container,
 .search-container-wrap,
@@ -401,6 +420,8 @@ main,
   justify-content: flex-end;
 }
 
+#info-container,
+.purchase-container,
 .stars-wrap,
 .title-wrap,
 .filter-options-container,
@@ -414,6 +435,7 @@ footer,
   align-items: center;
 }
 
+.title-price-container,
 .price-container,
 .title-info-container,
 .hero-image-container {
@@ -428,6 +450,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.purchase-container,
 .stars-wrap,
 .filter-options-list,
 footer,
@@ -518,6 +541,10 @@ nav {
   width: 100%;
 }
 
+.title-info-container {
+  width: 100%;
+}
+
 .filter-options-container {
   height: 32px;
 }
@@ -527,6 +554,11 @@ nav {
   width: 180px;
 }
 
+.product-image-container {
+  height: 300px;
+}
+
+.cta-sale,
 .filter-options-container,
 .search-container,
 .sale-container .cta-explore {
@@ -560,6 +592,11 @@ blockquote p,
   width: 100%;
 }
 
+.cta-sale {
+  border: 2px solid;
+}
+
+.cta-sale,
 .fa-heart,
 .stars-wrap,
 .filter-options-list p,
@@ -655,6 +692,7 @@ nav a {
   padding-right: 20px;
 }
 
+.cta-sale,
 .cta-explore {
   padding: 10px 20px;
 }
@@ -707,13 +745,19 @@ blockquote p {
   padding: 5px 0;
 }
 
+.product-image-container,
 .title-container {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
 .title-section {
-  padding: 0 0 20px 0;
+  padding: 0 20px 20px 20px;
 }
+
+.purchase-container {
+  padding: 26px 0;
+}
+
 
 
 /* 
@@ -735,6 +779,10 @@ aside {
 
 .search-container-wrap {
   margin: 60px 0 30px 0;
+}
+
+.cta-sale {
+  margin-top: 10px;
 }
 
 /* 
