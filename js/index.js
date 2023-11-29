@@ -25,6 +25,16 @@ switch (location.pathname) {
   case "/pages/games/":
     createGames();
     break;
+  case "/pages/cart/":
+    break;
+  case "/pages/cart/success/":
+    break;
+  case "/pages/about/":
+    break;
+  case "/pages/contact/":
+    break;
+  case "/pages/account/":
+    break;
   default:
     createHome();
     headingContainer.addEventListener("click", hideContainer);
