@@ -51,5 +51,4 @@ export function setNavStyle() {
       a.style.padding = "10px 15px";
     });
   }
-  console.log(windowInnerWidth);
 }

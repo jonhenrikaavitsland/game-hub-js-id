@@ -11,7 +11,12 @@ export function renderReleases(releases, parentElement, page) {
 }
 
 export function createHtmlObject(release, page) {
-  const linkUrl = `./title/?id=${release.id}`;
+  let linkUrl;
+  if (page === "home") {
+    linkUrl = `./pages/games/title/?id=${release.id}`;
+  } else if (page === "games") {
+    linkUrl = `./title/?id=${release.id}`;
+  }
 
   const element = document.createElement("div");
   element.classList.add("game-card");

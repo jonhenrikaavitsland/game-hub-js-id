@@ -194,6 +194,7 @@ body {
   text-align: center;
 }
 
+.title-section h1,
 nav,
 .title-info-container h2,
 .title-info-container h3,
@@ -201,6 +202,7 @@ nav,
   text-transform: uppercase;
 }
 
+.title-section h1,
 .price,
 .price-before,
 .title-info-container h2,
@@ -209,12 +211,14 @@ nav,
   font-family: var(--teko);
 }
 
+.title-wrap i,
 .reviews-container h2,
 .headings h2,
 .sale-container a {
   font-size: var(--s21);
 }
 
+.title-section h1,
 .games-list-container h1,
 .price,
 .title-info-container h2,
@@ -224,6 +228,7 @@ nav,
   font-size: var(--s28);
 }
 
+.title-section h1,
 .filter-options-list p,
 .title-info-container h2,
 .title-info-container h3 {
@@ -241,6 +246,7 @@ nav,
   font-weight: var(--w6);
 }
 
+.title-section h1,
 .price,
 .title-info-container h2,
 .title-info-container h3,
@@ -275,6 +281,7 @@ nav a:hover {
   transition: 300ms;
 }
 
+.stars-container i,
 .active,
 .price,
 .title-info-container i,
@@ -373,6 +380,7 @@ main,
   flex-direction: column;
 }
 
+.title-container,
 .games-list-container,
 .search-container-wrap,
 .advert section,
@@ -389,6 +397,8 @@ main,
   justify-content: flex-end;
 }
 
+.stars-wrap,
+.title-wrap,
 .filter-options-container,
 .search-container,
 footer,
@@ -414,6 +424,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.stars-wrap,
 .filter-options-list,
 footer,
 .sale-container,
@@ -426,6 +437,7 @@ footer,
   gap: 10px;
 }
 
+.title-wrap,
 .ftr-links,
 .ftr-socials,
 nav,
@@ -536,6 +548,12 @@ blockquote p,
 .heading-wrap {
   border-radius: 50px;
   width: 80%;
+}
+
+.title-section {
+  border-bottom: 1px solid;
+  border-color: var(--light-blue);
+  width: 100%;
 }
 
 .filter-options-list p,
@@ -681,6 +699,14 @@ blockquote p {
 
 .filter-options-list p {
   padding: 5px 0;
+}
+
+.title-container {
+  padding: 40px 20px;
+}
+
+.title-section {
+  padding: 0 0 20px 0;
 }
 
 

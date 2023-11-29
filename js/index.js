@@ -20,7 +20,7 @@ overlay.addEventListener("click", closeMenu);
 
 switch (location.pathname) {
   case "/pages/games/title/":
-    // createTitle();
+    createTitle();
     break;
   case "/pages/games/":
     createGames();
@@ -30,4 +30,5 @@ switch (location.pathname) {
     headingContainer.addEventListener("click", hideContainer);
 }
 
-
+import { reviews } from "./data/getReviews.js";
+console.log(reviews);
