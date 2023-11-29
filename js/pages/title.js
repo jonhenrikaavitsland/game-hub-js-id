@@ -23,3 +23,13 @@ export async function createTitle() {
     createErrorMessage(parentTitle, error);
   }
 }
+
+const heart = document.querySelector(".fa-heart");
+
+function addFav() {
+  if ((heart.style.color = "var(--white-f2)")) {
+    heart.style.color = "var(--rating18)";
+  } else {
+    heart.style.color = "var(--white-f2)";
+  }
+}

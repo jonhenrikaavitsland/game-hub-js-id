@@ -276,6 +276,10 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.fa-heart {
+  color: var(--white-f2);
+}
+
 nav a:hover {
   color: var(--hover-bg);
   transition: 300ms;
