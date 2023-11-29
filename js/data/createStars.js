@@ -21,3 +21,4 @@ export function createStars(reviews, game) {
 
   return reviewData;
 }
+// Returns a object that contains data to use for my title page.
