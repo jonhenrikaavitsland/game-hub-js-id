@@ -12,6 +12,7 @@ import { createTitle } from "./pages/title.js";
 import { setNavStyle, landscape } from "./config/setNav.js";
 import { addFav, checkHeart } from "./heart/heart.js";
 import { getContainer } from "./data/getContainer.js";
+import { scrollToSection } from "./scroll/scrollTo.js";
 
 setNavStyle();
 landscape.addEventListener("change", setNavStyle);
@@ -24,12 +25,19 @@ switch (location.pathname) {
   case "/pages/games/title/":
     createTitle();
     let heartContainer = "";
+    let starsContainer = "";
     setTimeout(() => {
       heartContainer = getContainer(".heart-container");
+    }, 1000);
+    setTimeout(() => {
+      starsContainer = getContainer(".stars-container");
     }, 1000);
     setTimeout(() => checkHeart(), 1000);
     setTimeout(() => {
       heartContainer.addEventListener("click", addFav);
+    }, 1000);
+    setTimeout(() => {
+      starsContainer.addEventListener("click", scrollToSection);
     }, 1000);
     break;
   case "/pages/games/":
@@ -52,5 +60,4 @@ switch (location.pathname) {
 
 import { reviews } from "./data/getReviews.js";
 console.log(reviews);
-
 

@@ -622,7 +622,7 @@ blockquote p,
 
 .heading-wrap {
   border-radius: 50px;
-  width: 80%;
+  width: clamp(320px, 50%, 700px);
 }
 
 .title-section {
@@ -640,7 +640,7 @@ blockquote p,
 
 .cta-sale,
 .fa-heart,
-.stars-wrap,
+.stars-container,
 .filter-options-list p,
 .filter-options-container,
 .heading-wrap,
