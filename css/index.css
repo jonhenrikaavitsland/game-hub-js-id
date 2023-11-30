@@ -201,6 +201,10 @@ nav,
   text-transform: uppercase;
 }
 
+.age-box,
+.title-parent-container h2,
+.title-category-container h2,
+.title-description-container h2,
 .title-price-before,
 .title-price,
 .title-section h1,
@@ -220,6 +224,10 @@ nav,
   font-size: var(--s21);
 }
 
+.age-box,
+.title-parent-container h2,
+.title-category-container h2,
+.title-description-container h2,
 .title-price,
 .title-section h1,
 .games-list-container h1,
@@ -231,6 +239,9 @@ nav,
   font-size: var(--s28);
 }
 
+.title-parent-container h2,
+.title-category-container h2,
+.title-description-container h2,
 .title-section h1,
 .filter-options-list p,
 .title-info-container h2,
@@ -249,7 +260,9 @@ nav,
   font-weight: var(--w6);
 }
 
-
+.title-parent-container h2, 
+.title-category-container h2,
+.title-description-container h2,
 .title-price,
 .title-section h1,
 .price,
@@ -402,6 +415,7 @@ main,
   flex-direction: column;
 }
 
+.age-box,
 .product-image-container,
 .title-container,
 .games-list-container,
@@ -420,6 +434,7 @@ main,
   justify-content: flex-end;
 }
 
+.age-box,
 #info-container,
 .purchase-container,
 .stars-wrap,
@@ -464,6 +479,7 @@ footer,
   gap: 10px;
 }
 
+.title-details-container,
 .title-wrap,
 .ftr-links,
 .ftr-socials,
@@ -679,6 +695,7 @@ footer,
   padding: 0 10px 10px 10px;
 }
 
+.title-details-container,
 .error,
 nav {
   padding: 20px;
