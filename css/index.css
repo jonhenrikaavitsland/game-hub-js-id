@@ -882,6 +882,7 @@ aside {
     display: grid;
     grid-template-columns: 4fr 5fr;
     grid-template-rows: repeat(5, max-content);
+  }
 
   .bread-crumb-wrap {
     grid-column: 1 / -1;
@@ -1023,12 +1024,6 @@ aside {
   .advert {
     flex: 1;
     padding: 0;
-    margin: 0
-
-
+    margin: 0;
   }
-
-  
-
-
 }
