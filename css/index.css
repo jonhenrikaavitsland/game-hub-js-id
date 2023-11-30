@@ -949,8 +949,8 @@ aside {
     cursor: pointer;
   }
 
-  .product-image-container {
-    height: 450px;
+  .product-image-container img{
+    height: 350px;
   }
 
   .purchase-container,
