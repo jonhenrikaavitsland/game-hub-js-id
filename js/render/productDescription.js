@@ -54,7 +54,7 @@ export function productDescription(game, parent) {
   parentalContainer.append(ageRatingImage);
 
   const ageRatingInside = document.createElement("span");
-  ageRatingInside.textContent = game.ageRating.replace(/\+/g, "");
+  ageRatingInside.textContent = game.ageRating;
   if (
     game.ageRating.replace(/\+/g, "") >= 12 &&
     game.ageRating.replace(/\+/g, "") <= 16
