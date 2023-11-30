@@ -479,6 +479,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.bread-crumb-wrap p,
 .purchase-container,
 .stars-wrap,
 .filter-options-list,
@@ -592,7 +593,7 @@ nav {
 }
 
 .product-image-container {
-  height: 300px;
+  height: 300px
 }
 
 .cta-sale,
@@ -787,9 +788,12 @@ blockquote p {
   padding: 5px 0;
 }
 
-.product-image-container,
-.title-container {
+.product-image-container {
   padding: 40px 0;
+}
+
+.bread-crumb-wrap {
+  padding: 10px 0 40px 20px
 }
 
 .title-section {
