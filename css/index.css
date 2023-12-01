@@ -232,6 +232,7 @@ nav,
   font-size: var(--s21);
 }
 
+.contact-wrap h1,
 .account-wrap h1,
 .about-heading h1,
 .title-reviews-container h3,
@@ -266,6 +267,7 @@ nav,
   font-weight: var(--w5);
 }
 
+.contact-wrap h1,
 .account-wrap h1,
 .about-heading h1,
 .games-list-container h1,
@@ -314,6 +316,7 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.cta-contact,
 .log-in-btn,
 .cta-sale,
 .fa-heart {
@@ -360,6 +363,10 @@ div .cta-explore {
   border-color: var(--white-f2);
 }
 
+form .cta-contact {
+  border-color: var(--fancy-green);
+}
+
 .review-body,
 blockquote p,
 .game-card,
@@ -367,6 +374,7 @@ nav {
   background-color: var(--light-blue);
 }
 
+.cta-contact,
 .cta-sale,
 .cta-explore,
 main {
@@ -460,6 +468,7 @@ main,
   justify-content: flex-end;
 }
 
+.contact-wrap,
 .info-wrap,
 .log-in-wrap,
 .account-wrap,
@@ -504,6 +513,7 @@ footer,
   gap: 5px;
 }
 
+.contact-wrap form,
 .info-wrap,
 .about-p-wrap,
 .filter-options-container,
@@ -511,6 +521,7 @@ footer,
   gap: 10px;
 }
 
+.contact-wrap,
 .title-reviews-container,
 .title-details-container,
 .title-wrap,
@@ -625,6 +636,27 @@ nav {
   height: 300px;
 }
 
+.form__input {
+  height: 3rem;
+}
+
+.form__textarea {
+  height: 10rem;
+}
+
+.contact-form-wrap {
+  width: 90%;
+}
+
+.contact-form-wrap form {
+  width: clamp(200px, 100%, 800px);
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+}
+
 .cta-sale,
 .filter-options-container,
 .search-container,
@@ -636,6 +668,9 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
+.cta-contact,
+.form__textarea,
+.form__input,
 .log-in-wrap input,
 .review-body,
 blockquote p,
@@ -664,11 +699,13 @@ blockquote p,
   border-color: var(--light-blue);
 }
 
+.cta-contact,
 .log-in-btn,
 .cta-sale {
   border: 2px solid;
 }
 
+.cta-contact,
 .log-in-btn,
 .cta-sale,
 .fa-heart,
@@ -851,6 +888,14 @@ blockquote p {
 
 .log-in-btn {
   padding: 0.5rem 1rem;
+}
+
+.contact-wrap {
+  padding: 50px 0;
+}
+
+.cta-contact {
+  padding: 1rem 2rem;
 }
 
 
