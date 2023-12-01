@@ -206,6 +206,7 @@ nav,
   text-transform: capitalize;
 }
 
+.cart-heading h1,
 .review-body figcaption,
 .title-reviews-container h3,
 .age-box,
@@ -223,6 +224,15 @@ nav,
   font-family: var(--teko);
 }
 
+.cart-normal-price {
+  font-size: 0.75rem;
+}
+
+#cart-heading-price-before {
+  font-size: var(--s16);
+}
+
+.pay-heading-container h2,
 .review-body figcaption,
 .cta-sale,
 .title-wrap i,
@@ -232,6 +242,7 @@ nav,
   font-size: var(--s21);
 }
 
+.cart-heading h1,
 .contact-wrap h1,
 .account-wrap h1,
 .about-heading h1,
@@ -251,6 +262,7 @@ nav,
   font-size: var(--s28);
 }
 
+.cart-heading h1,
 .review-body figcaption,
 .title-reviews-container h3,
 .title-parent-container h2,
@@ -263,6 +275,8 @@ nav,
   font-weight: var(--w4);
 }
 
+#cart-heading-price-before,
+#cart-heading-discounted,
 .age-rating-container span {
   font-weight: var(--w5);
 }
@@ -277,6 +291,7 @@ nav,
   font-weight: var(--w6);
 }
 
+.cart-best-price,
 .title-parent-container h2, 
 .title-category-container h2,
 .title-description-container h2,
@@ -293,6 +308,8 @@ nav,
   line-height: inherit;
 }
 
+.cart-normal-price,
+#cart-heading-price-before,
 .title-price-before,
 .price-before {
   text-decoration: line-through;
@@ -316,6 +333,7 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.bottom-cart-wrap button,
 .cta-contact,
 .log-in-btn,
 .cta-sale,
@@ -367,6 +385,11 @@ form .cta-contact {
   border-color: var(--fancy-green);
 }
 
+.bottom-cart-wrap button {
+  background-color: transparent;
+}
+
+.cart-game-wrap,
 .review-body,
 blockquote p,
 .game-card,
@@ -385,6 +408,7 @@ main {
   background-color: var(--dark-green);
 }
 
+.pay-logo,
 .filter-options-list,
 .filter-options-container,
 .search-wrap input,
@@ -463,11 +487,15 @@ main,
   justify-content: center;
 }
 
+.cart-p,
 .title-reviews-container :nth-child(2),
 .filter-wrap {
   justify-content: flex-end;
 }
 
+.cart-game-lower-container,
+.pay-logo,
+.cart-container,
 .contact-wrap,
 .info-wrap,
 .log-in-wrap,
@@ -488,6 +516,7 @@ footer,
   align-items: center;
 }
 
+.cart-price-wrap,
 .title-price-container,
 .price-container,
 .title-info-container,
@@ -503,6 +532,7 @@ footer,
   flex-wrap: wrap;
 }
 
+.cart-p,
 .bread-crumb-wrap p,
 .purchase-container,
 .stars-wrap,
@@ -513,6 +543,7 @@ footer,
   gap: 5px;
 }
 
+.cart-game-top-container,
 .contact-wrap form,
 .info-wrap,
 .about-p-wrap,
@@ -544,6 +575,10 @@ nav ul {
   gap: 50vh;
 }
 
+.cart-p,
+.cart-price-wrap,
+.pay-heading-container h2,
+.pay-logo img,
 .filter-options-container p,
 .search-wrap,
 .advert div,
@@ -553,6 +588,8 @@ main,
 .headings {
   flex: 1;
 }
+
+
 
 .games-list-container h1 {
   flex: 100%;
@@ -613,6 +650,13 @@ nav {
   width: 100%;
 }
 
+.bottom-cart-wrap,
+.cart-game-wrap {
+  width: 90%;
+}
+
+.cart-heading,
+.cart-container .bread-crumb-wrap,
 .review-wrap,
 .title-reviews-container section,
 .title-info-container {
@@ -652,11 +696,24 @@ nav {
   width: clamp(200px, 100%, 800px);
 }
 
+.pay-logo img {
+  height: 30px;
+}
+
 .btn {
   height: 2rem;
   width: 2rem;
 }
 
+.cart-game-top-container {
+  height: 150px;
+}
+
+.cart-game-top-container img {
+  height: 50px;
+}
+
+.cart-game-wrap,
 .cta-sale,
 .filter-options-container,
 .search-container,
@@ -705,6 +762,12 @@ blockquote p,
   border: 2px solid;
 }
 
+.bottom-cart-wrap button {
+  border: 0;
+}
+
+.cancel-cart,
+.bottom-cart-wrap button,
 .cta-contact,
 .log-in-btn,
 .cta-sale,
@@ -898,6 +961,21 @@ blockquote p {
   padding: 1rem 2rem;
 }
 
+.pay-logo {
+  padding: 10px 5px;
+}
+
+.sec-checkout {
+  padding: 0 0 40px 20px;
+}
+
+.cart-heading {
+  padding: 0 0 0 20px;
+}
+
+.cart-game-wrap {
+  padding: 13px;
+}
 
 /* 
 10. Margin
@@ -940,9 +1018,23 @@ aside {
   margin-bottom: 2rem;
 }
 
+.cart-game-wrap {
+  margin: 20px 0 0 0;
+}
+
+.bottom-cart-wrap {
+  padding: 0 0 60px 0;
+}
+
 /* 
 11. @Media
 */
+
+@media (min-width: 420px) {
+  .cart-game-top-container {
+    height: auto;
+  }
+}
 
 @media (min-width: 800px) {
 
@@ -1006,6 +1098,7 @@ aside {
   6.  Flex
   */
 
+  .sec-checkout,
   .purchase-container {
     justify-content: center;
   }
@@ -1015,8 +1108,13 @@ aside {
     flex: 1;
   }
 
+  .sec-checkout,
   .heading-top {
     display: flex;
+  }
+
+  .sec-checkout {
+    flex-direction: column;
   }
 
   #info-container,
@@ -1024,6 +1122,14 @@ aside {
     align-items: flex-start;
   }
 
+  .cart-main {
+    flex-direction: row;
+  }
+
+  .cart-container,
+  .sec-checkout {
+    flex: 1;
+  }
 
   /* 
   7.  Layout

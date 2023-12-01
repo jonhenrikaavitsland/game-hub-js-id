@@ -13,6 +13,9 @@ import { setNavStyle, landscape } from "./config/setNav.js";
 import { addFav, checkHeart } from "./heart/heart.js";
 import { getContainer } from "./data/getContainer.js";
 import { scrollToSection } from "./scroll/scrollTo.js";
+import { createCart } from "./pages/cart.js";
+import { button } from "./localStorage/button.js";
+import { updateCartLink } from "./localStorage/updateCartLink.js";
 
 setNavStyle();
 landscape.addEventListener("change", setNavStyle);
@@ -20,10 +23,12 @@ menuIcon.addEventListener("click", openMenu);
 menuCloseIcon.addEventListener("click", closeMenu);
 document.addEventListener("keydown", closeMenuEsc);
 overlay.addEventListener("click", closeMenu);
+updateCartLink();
 
 switch (location.pathname) {
   case "/pages/games/title/":
     createTitle();
+    setTimeout(button, 300);
     let heartContainer = "";
     let starsContainer = "";
     setTimeout(() => {
@@ -44,6 +49,7 @@ switch (location.pathname) {
     createGames();
     break;
   case "/pages/cart/":
+    createCart();
     break;
   case "/pages/cart/success/":
     break;
@@ -58,6 +64,4 @@ switch (location.pathname) {
     headingContainer.addEventListener("click", hideContainer);
 }
 
-import { reviews } from "./data/getReviews.js";
-console.log(reviews);
 

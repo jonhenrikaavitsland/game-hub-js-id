@@ -1,4 +1,4 @@
 export function getContainer(string) {
-  const constainer = document.querySelector(string);
-  return constainer;
+  const container = document.querySelector(string);
+  return container;
 }
