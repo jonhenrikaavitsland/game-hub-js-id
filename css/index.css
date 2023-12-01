@@ -608,6 +608,10 @@ nav {
   width: 100%;
 }
 
+.title-info-container {
+  height: 90px;
+}
+
 .filter-options-container {
   height: 32px;
 }
