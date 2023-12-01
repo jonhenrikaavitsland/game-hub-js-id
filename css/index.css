@@ -231,6 +231,7 @@ nav,
   font-size: var(--s21);
 }
 
+.about-heading h1,
 .title-reviews-container h3,
 .age-box,
 .title-parent-container h2,
@@ -263,6 +264,7 @@ nav,
   font-weight: var(--w5);
 }
 
+.about-heading h1,
 .games-list-container h1,
 .reviews-container h2,
 .headings h2,
@@ -489,6 +491,7 @@ footer,
   gap: 5px;
 }
 
+.about-p-wrap,
 .filter-options-container,
 .search-container {
   gap: 10px;
@@ -808,6 +811,7 @@ blockquote p {
   padding: 10px 0;
 }
 
+.about-wrap,
 .title-details-container {
   padding: 40px 20px;
 }
@@ -840,6 +844,10 @@ aside {
 
 .cta-sale {
   margin-top: 10px;
+}
+
+.about-heading {
+  margin: 0 0 20px 0;
 }
 
 /* 
