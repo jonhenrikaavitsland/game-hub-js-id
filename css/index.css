@@ -188,6 +188,7 @@ body {
 3.  Typography
 */
 
+.account-wrap h1,
 .games-list-container h1 {
   text-align: center;
 }
@@ -231,6 +232,7 @@ nav,
   font-size: var(--s21);
 }
 
+.account-wrap h1,
 .about-heading h1,
 .title-reviews-container h3,
 .age-box,
@@ -264,6 +266,7 @@ nav,
   font-weight: var(--w5);
 }
 
+.account-wrap h1,
 .about-heading h1,
 .games-list-container h1,
 .reviews-container h2,
@@ -311,6 +314,7 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.log-in-btn,
 .cta-sale,
 .fa-heart {
   color: var(--white-f2);
@@ -321,6 +325,7 @@ nav a:hover {
   transition: 300ms;
 }
 
+.add-fancy,
 .review-body i,
 .title-price,
 .cta-sale i,
@@ -350,6 +355,7 @@ div .cta-explore {
   border-color: var(--light-blue);
 }
 
+.log-in-btn,
 .cta-sale {
   border-color: var(--white-f2);
 }
@@ -365,6 +371,10 @@ nav {
 .cta-explore,
 main {
   background-color: var(--dark-blue);
+}
+
+.log-in-btn {
+  background-color: var(--dark-green);
 }
 
 .filter-options-list,
@@ -450,6 +460,9 @@ main,
   justify-content: flex-end;
 }
 
+.info-wrap,
+.log-in-wrap,
+.account-wrap,
 .age-box,
 #info-container,
 .purchase-container,
@@ -491,6 +504,7 @@ footer,
   gap: 5px;
 }
 
+.info-wrap,
 .about-p-wrap,
 .filter-options-container,
 .search-container {
@@ -570,6 +584,14 @@ nav {
   width: clamp(200px, 70%, 800px);
 }
 
+.log-in-wrap fieldset {
+  width: 250px;
+}
+
+.log-in-wrap input {
+  height: 3rem;
+}
+
 .error,
 .cta-explore {
   border: 2px solid;
@@ -610,6 +632,7 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
+.log-in-wrap input,
 .review-body,
 blockquote p,
 .game-card,
@@ -637,10 +660,12 @@ blockquote p,
   border-color: var(--light-blue);
 }
 
+.log-in-btn,
 .cta-sale {
   border: 2px solid;
 }
 
+.log-in-btn,
 .cta-sale,
 .fa-heart,
 .stars-container,
@@ -820,6 +845,10 @@ blockquote p {
   padding: 20px 10px;
 }
 
+.log-in-btn {
+  padding: 0.5rem 1rem;
+}
+
 
 /* 
 10. Margin
@@ -848,6 +877,18 @@ aside {
 
 .about-heading {
   margin: 0 0 20px 0;
+}
+
+.account-wrap h1 {
+  margin: 50px 0;
+}
+
+.account-wrap fieldset {
+  margin-bottom: 1rem;
+}
+
+.log-in-btn {
+  margin-bottom: 2rem;
 }
 
 /* 
