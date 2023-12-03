@@ -148,7 +148,7 @@ export function createCartBottom() {
 
   const discountTotals = document.createElement("span");
   discountTotals.classList.add("add-fancy");
-  discountTotals.textContent = "€ " + discountTotal;
+  discountTotals.textContent = "€ " + parseFloat(discountTotal.toFixed(2);
   loginElement.appendChild(discountTotals);
 
   parentContainer.append(bottomContainer);
