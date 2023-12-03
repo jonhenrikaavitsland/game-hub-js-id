@@ -372,6 +372,7 @@ blockquote p::after {
   color: var(--white-f2);
 }
 
+.cart-p a:hover,
 .success-sent a:hover,
 .breadcrumb a:hover,
 .cancel-cart:hover,
