@@ -8,10 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;500;600&family=Teko:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../../css/index.css">
-    <link rel="shortcut icon" href="./../../images/logo-checked.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="shortcut icon" href="../../images/logo-checked.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a4285c5b9b.js" crossorigin="anonymous"></script>
-    <script defer type="module" src="./../../js/index.js"></script>
+    <script defer type="module" src="../../js/index.js"></script>
+    <!-- Hotjar Tracking Code for Game Hub -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3741942,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
   <body>
     <div class="overlay hidden"></div>
@@ -21,13 +32,13 @@
           <div class="hamburger-wrap">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <img src="./../../images/logo-unchecked.png" alt="game hub" class="logo">
+          <a href="../../index.html"><img src="../../images/logo-unchecked.png" alt="game hub" class="logo"></a>
         </div>
         <div class="heading-right">
           <p>
-            <a href="./../account/">Sign in / Register</a>
+            <a href="../account/">Sign in / Register</a>
             <span class="cart-wrap">
-              <a href="./../cart/">Cart
+              <a href="../cart/">Cart
                 <span class="cart">0</span>
               </a>
             </span>
@@ -40,22 +51,22 @@
         </div>
         <ul class="flex flex-col">
           <li class="li-1">
-            <a href="./../../index.html">Home</a>
+            <a href="../../index.html">Home</a>
           </li>
           <li class="li-2">
-            <a href="./../games/">Games</a>
+            <a href="../games/">Games</a>
           </li>
           <li class="li-3">
-            <a href="./../about/">About</a>
+            <a href="../about/">About</a>
           </li>
           <li class="¨li-4 active">
             <a href="#">Contact</a>
           </li>
           <li class="link-cart">
-            <a href="./../cart/">Cart</a>
+            <a href="../cart/">Cart</a>
           </li>
           <li class="link-acc">
-            <a href="./../account/">Account</a>
+            <a href="../account/">Account</a>
           </li>
         </ul>
       </nav>
@@ -67,23 +78,23 @@
           <form action="contact-success.php" method="POST" class="flex flex-col">
             <div class="flex flex-col">
               <label for="first-name">First name:</label>
-              <input type="text" name="first-name" id="first-name" required placeholder="First and middle name(s)" class="form__input">
+              <input type="text" name="first-name" id="first-name" required placeholder="First and middle name(s)" class="form__input input">
             </div>
             <div class="flex flex-col">
               <label for="last-name">Last name:</label>
-              <input type="text" name="last-name" id="last-name" required placeholder="Your surename" class="form__input">
+              <input type="text" name="last-name" id="last-name" required placeholder="Your surename" class="form__input input">
             </div>
             <div class="flex flex-col">
               <label for="email">E-mail adress:</label>
-              <input type="email" name="email" id="email" required placeholder="your@e-mail.com" class="form__input">
+              <input type="email" name="email" id="email" required placeholder="your@e-mail.com" class="form__input input">
             </div>
             <div class="flex flex-col">
               <label for="phone">Telephone number:</label>
-              <input type="tel" name="phone" id="phone" placeholder="Telephone number" class="form__input">
+              <input type="tel" name="phone" id="phone" placeholder="Telephone number" class="form__input input">
             </div>
             <div class="flex flex-col">
               <label for="message">Your message:</label>
-              <textarea name="message" id="message" placeholder="What can we help you with?" class="form__textarea"></textarea>
+              <textarea name="message" id="message" placeholder="What can we help you with?" class="form__textarea input"></textarea>
             </div>
             <div>
               <p>Do you want us to give you a call?</p>
@@ -113,7 +124,7 @@
       </div>
       <div class="flex ftr-links">
         &copy; Game Hub
-        <a href="./pages/about/">About Us</a>
+        <a href="../about/">About Us</a>
         <a href="#" class="add-fancy">Contact Us</a>
       </div>
     </footer>

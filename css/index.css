@@ -182,7 +182,31 @@ body {
   }
 }
 
+/* Button animation */
 
+/* The following is for transition for my buttons */
+.cta {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: '';
+  padding: 10px;
+  background-color: var(--fancy-green);
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -25px;
+  left: -70px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 130%;
+}
 
 /* 
 3.  Typography
@@ -232,6 +256,7 @@ nav,
   font-size: var(--s16);
 }
 
+.success-container h2,
 .pay-heading-container h2,
 .review-body figcaption,
 .cta-sale,
@@ -242,6 +267,8 @@ nav,
   font-size: var(--s21);
 }
 
+.fa-square-check,
+.success-header-container h1,
 .cart-heading h1,
 .contact-wrap h1,
 .account-wrap h1,
@@ -281,6 +308,9 @@ nav,
   font-weight: var(--w5);
 }
 
+
+.success-container h2,
+.success-header-container h1,
 .contact-wrap h1,
 .account-wrap h1,
 .about-heading h1,
@@ -333,6 +363,7 @@ blockquote p::after {
   border-color: var(--white-f2);
 }
 
+.cta-checkout,
 .bottom-cart-wrap button,
 .cta-contact,
 .log-in-btn,
@@ -341,6 +372,15 @@ blockquote p::after {
   color: var(--white-f2);
 }
 
+.success-sent a:hover,
+.breadcrumb a:hover,
+.cancel-cart:hover,
+.empty-btn:hover,
+.info-wrap a:hover,
+.heading-right a:hover,
+footer a:hover,
+.bread-crumb-wrap a:hover,
+.button-container:hover,
 nav a:hover {
   color: var(--hover-bg);
   transition: 300ms;
@@ -381,6 +421,7 @@ div .cta-explore {
   border-color: var(--white-f2);
 }
 
+form .cta-checkout,
 form .cta-contact {
   border-color: var(--fancy-green);
 }
@@ -397,6 +438,7 @@ nav {
   background-color: var(--light-blue);
 }
 
+.cta-checkout,
 .cta-contact,
 .cta-sale,
 .cta-explore,
@@ -428,6 +470,7 @@ aside,
   opacity: 50%;
 }
 
+.input:hover,
 .filter-options-list p:hover,
 .heading-wrap:hover {
   background-color: var(--hover-bg);
@@ -493,6 +536,9 @@ main,
   justify-content: flex-end;
 }
 
+.success-header-container,
+.success-container,
+.success-main,
 .cart-game-lower-container,
 .pay-logo,
 .cart-container,
@@ -552,6 +598,9 @@ footer,
   gap: 10px;
 }
 
+.success-header-container,
+.success-main,
+.button-container,
 .contact-wrap,
 .title-reviews-container,
 .title-details-container,
@@ -563,6 +612,7 @@ nav ul {
   gap: 20px;
 }
 
+.success-container,
 .games-list-container,
 .advert section,
 .reviews-container,
@@ -655,6 +705,7 @@ nav {
   width: 90%;
 }
 
+.bread-crumb-wrap-success,
 .cart-heading,
 .cart-container .bread-crumb-wrap,
 .review-wrap,
@@ -725,6 +776,7 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
+.cta-checkout,
 .cta-contact,
 .form__textarea,
 .form__input,
@@ -756,6 +808,7 @@ blockquote p,
   border-color: var(--light-blue);
 }
 
+.cta-checkout,
 .cta-contact,
 .log-in-btn,
 .cta-sale {
@@ -766,6 +819,8 @@ blockquote p,
   border: 0;
 }
 
+.cart-p a,
+.cta-checkout,
 .cancel-cart,
 .bottom-cart-wrap button,
 .cta-contact,
@@ -854,6 +909,7 @@ footer,
   padding: 0 10px 10px 10px;
 }
 
+.success-main,
 .error,
 nav {
   padding: 20px;
@@ -957,6 +1013,7 @@ blockquote p {
   padding: 50px 0;
 }
 
+.cta-checkout,
 .cta-contact {
   padding: 1rem 2rem;
 }
@@ -1018,12 +1075,17 @@ aside {
   margin-bottom: 2rem;
 }
 
+.cta-checkout,
 .cart-game-wrap {
   margin: 20px 0 0 0;
 }
 
 .bottom-cart-wrap {
   padding: 0 0 60px 0;
+}
+
+.cart-wrap {
+  padding-left: 20px;
 }
 
 /* 

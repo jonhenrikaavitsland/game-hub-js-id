@@ -35,8 +35,12 @@ export function purchaseContainer(game, parentContainer) {
   systemParagraph.textContent = "System: Playbox\u2122";
   infoContainer.append(systemParagraph);
 
+  const buttonContainer = document.createElement("div");
+  buttonContainer.classList.add("button-container", "flex", "flex-col");
+  purchaseContainer.append(buttonContainer);
+
   const childButton = document.createElement("button");
   childButton.classList.add("cta", "cta-sale");
   childButton.innerHTML = "Add " + `<i class="fa-solid fa-cart-plus"></i>`;
-  purchaseContainer.append(childButton);
+  buttonContainer.append(childButton);
 }

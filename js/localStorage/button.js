@@ -33,6 +33,12 @@ export async function button() {
   function checkToUpdateButton() {
     if (localStorage.getItem(gameKey)) {
       titleButton.textContent = updatedButton;
+      const container = document.querySelector(".button-container");
+      const continueShoppiong = document.createElement("a");
+      continueShoppiong.href = "../";
+      continueShoppiong.textContent = "... or continue shopping!";
+      continueShoppiong.classList.add("continue-shopping");
+      container.append(continueShoppiong);
     }
   }
 

@@ -8,10 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;500;600&family=Teko:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../../css/index.css">
-    <link rel="shortcut icon" href="./../../images/logo-checked.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="shortcut icon" href="../../images/logo-checked.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a4285c5b9b.js" crossorigin="anonymous"></script>
-    <script defer type="module" src="./../../js/index.js"></script>
+    <script defer type="module" src="../../js/index.js"></script>
+    <!-- Hotjar Tracking Code for Game Hub -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3741942,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
   <body>
     <div class="overlay hidden"></div>
@@ -21,11 +32,11 @@
           <div class="hamburger-wrap">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <img src="./../../images/logo-unchecked.png" alt="game hub" class="logo">
+          <a href="../../index.html"><img src="../../images/logo-unchecked.png" alt="game hub" class="logo"></a>
         </div>
         <div class="heading-right">
           <p>
-            <a href="./../account/">Sign in / Register</a>
+            <a href="../account/">Sign in / Register</a>
             <span class="cart-wrap">
               <a href="#">Cart
                 <span class="cart">0</span>
@@ -40,22 +51,22 @@
         </div>
         <ul class="flex flex-col">
           <li class="li-1">
-            <a href="./../../index.html">Home</a>
+            <a href="../../index.html">Home</a>
           </li>
           <li class="li-2">
-            <a href="./../games/">Games</a>
+            <a href="../games/">Games</a>
           </li>
           <li class="li-3">
-            <a href="./../about/">About</a>
+            <a href="../about/">About</a>
           </li>
           <li class="li-4">
-            <a href="./../contact/">Contact</a>
+            <a href="../contact/">Contact</a>
           </li>
           <li class="link-cart active"  >
             <a href="#">Cart</a>
           </li>
           <li class="link-acc">
-            <a href="./../account/">Account</a>
+            <a href="../account/">Account</a>
           </li>
         </ul>
       </nav>
@@ -88,11 +99,11 @@
         <form action="../cart/success/" class="checkout-frm">
           <div class="flex flex-col">
             <label for="name">Name of the card holder:</label>
-            <input type="text" name="name" id="name" required placeholder="Name as on the card" class="form__input tbl-1 form-hover">
+            <input type="text" name="name" id="name" required placeholder="Name as on the card" class="form__input tbl-1 form-hover input">
           </div>
           <div class="flex flex-col">
             <label for="card">Card number:</label>
-            <input type="tel" name="card" id="card" minlength="16" maxlength="16" required placeholder="16 numbers" class="form__input tbl-1 form-hover">
+            <input type="tel" name="card" id="card" minlength="16" maxlength="16" required placeholder="16 numbers" class="form__input tbl-1 form-hover input">
           </div>
           <p class="give-margin-null">Expiration date:</p>
           <div class="exp-ccv-container">
@@ -137,7 +148,7 @@
               <label for="ccv">ccv:</label>
             </div>
             <div>
-              <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123" class="form__input ccv form-hover">
+              <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123" class="form__input ccv form-hover input">
             </div>
           </div>
           <input type="submit" value="PAY NOW" class="cta-checkout">
@@ -154,8 +165,8 @@
       </div>
       <div class="flex ftr-links">
         &copy; Game Hub
-        <a href="./pages/about/">About Us</a>
-        <a href="./pages/contact/">Contact Us</a>
+        <a href="../about/">About Us</a>
+        <a href="../contact/">Contact Us</a>
       </div>
     </footer>
   </body>
