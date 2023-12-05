@@ -252,8 +252,14 @@ nav,
   font-size: 0.75rem;
 }
 
+
+.fa-square-check,
 #cart-heading-price-before {
   font-size: var(--s16);
+}
+
+.fa-square-xmark {
+  font-size: 1.125rem;
 }
 
 .success-container h2,
@@ -387,6 +393,7 @@ nav a:hover {
   transition: 300ms;
 }
 
+.fa-square-check,
 .add-fancy,
 .review-body i,
 .title-price,
@@ -405,8 +412,13 @@ nav a:hover {
   color: var(--dark-blue);
 }
 
+.fa-square-xmark,
 .error {
   color: red;
+}
+
+.text-error {
+  color: var(--rating-12-16);
 }
 
 .search-container {
@@ -650,6 +662,16 @@ main,
 7.  Layout
 */
 
+.first-name-error .fa-square-xmark,
+.first-name-error .fa-square-check,
+.last-name-error .fa-square-xmark,
+.last-name-error .fa-square-check,
+.email-error .fa-square-xmark,
+.email-error .fa-square-check,
+.phone-error .fa-square-xmark,
+.phone-error .fa-square-check,
+.textarea-error .fa-square-xmark,
+.textarea-error .fa-square-check,
 .search-btn-wrap,
 .heading-right,
 .hidden {

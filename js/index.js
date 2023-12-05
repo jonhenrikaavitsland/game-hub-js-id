@@ -59,9 +59,9 @@ switch (location.pathname) {
     break;
   case "/pages/account/":
     break;
-  default:
+  case "/":
     createHome();
     headingContainer.addEventListener("click", hideContainer);
 }
 
-
+import "./formValidation/formValidateContact.js";
