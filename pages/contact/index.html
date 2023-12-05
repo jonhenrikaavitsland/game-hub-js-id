@@ -75,26 +75,50 @@
       <section class="contact-wrap flex flex-col">
         <h1>Contact</h1>
         <div class="contact-form-wrap flex">
-          <form action="contact-success.php" method="POST" class="flex flex-col">
+          <form action="contact-success.php" method="post" class="flex flex-col">
             <div class="flex flex-col">
-              <label for="first-name">First name:</label>
-              <input type="text" name="first-name" id="first-name" required placeholder="First and middle name(s)" class="form__input input">
+              <label for="first-name">First name: *</label>
+              <input type="text" name="first-name" id="first-name" placeholder="First and middle name(s)" class="form__input input">
+              <div class="first-name-error flex flex-col">
+                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-check"></i>
+                <span class="text-error"></span>
+              </div>
+            <div class="flex flex-col">
+              <label for="last-name">Last name: *</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Your surename" class="form__input input">
+              <div class="last-name-error flex flex-col">
+                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-check"></i>
+                <span class="text-error"></span>
+              </div>
             </div>
             <div class="flex flex-col">
-              <label for="last-name">Last name:</label>
-              <input type="text" name="last-name" id="last-name" required placeholder="Your surename" class="form__input input">
-            </div>
-            <div class="flex flex-col">
-              <label for="email">E-mail adress:</label>
-              <input type="email" name="email" id="email" required placeholder="your@e-mail.com" class="form__input input">
+              <label for="email">E-mail adress: *</label>
+              <input type="text" name="email" id="email" placeholder="your@e-mail.com" class="form__input input">
+              <div class="email-error flex flex-col">
+                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-check"></i>
+                <span class="text-error"></span>
+              </div>
             </div>
             <div class="flex flex-col">
               <label for="phone">Telephone number:</label>
               <input type="tel" name="phone" id="phone" placeholder="Telephone number" class="form__input input">
+              <div class="phone-error flex flex-col">
+                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-check"></i>
+                <span class="text-error"></span>
+              </div>
             </div>
             <div class="flex flex-col">
               <label for="message">Your message:</label>
               <textarea name="message" id="message" placeholder="What can we help you with?" class="form__textarea input"></textarea>
+              <div class="textarea-error flex flex-col">
+                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-check"></i>
+                <span class="text-error"></span>
+              </div>
             </div>
             <div>
               <p>Do you want us to give you a call?</p>
