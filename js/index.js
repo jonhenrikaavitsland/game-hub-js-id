@@ -16,6 +16,7 @@ import { scrollToSection } from "./scroll/scrollTo.js";
 import { createCart } from "./pages/cart.js";
 import { button } from "./localStorage/button.js";
 import { updateCartLink } from "./localStorage/updateCartLink.js";
+import { validateForm } from "../js/formValidation/formValidateContact.js";
 
 setNavStyle();
 landscape.addEventListener("change", setNavStyle);
@@ -56,6 +57,16 @@ switch (location.pathname) {
   case "/pages/about/":
     break;
   case "/pages/contact/":
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+    validateForm();
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(input => {
+      input.addEventListener("change", validateForm);
+      input.addEventListener("blur", validateForm);
+    });
     break;
   case "/pages/account/":
     break;
@@ -64,4 +75,3 @@ switch (location.pathname) {
     headingContainer.addEventListener("click", hideContainer);
 }
 
-import "./formValidation/formValidateContact.js";

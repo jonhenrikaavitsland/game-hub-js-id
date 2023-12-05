@@ -2,11 +2,7 @@ const firstNameInput = document.querySelector("#first-name");
 const lastNameInput = document.querySelector("#last-name");
 const eMailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
-const textareaInput = document.querySelector("#message");
 
-const firstNameErrorXMark = document.querySelector(
-  ".first-name-error .fa-square-xmark"
-);
 const firstNameErrorCheck = document.querySelector(
   ".first-name-error .fa-square-check"
 );
@@ -14,9 +10,6 @@ const firstNameErrorText = document.querySelector(
   ".first-name-error .text-error"
 );
 
-const lastNameErrorXmark = document.querySelector(
-  ".last-name-error .fa-square-xmark"
-);
 const lastNameErrorCheck = document.querySelector(
   ".last-name-error .fa-square-check"
 );
@@ -24,32 +17,13 @@ const lastNameErrorText = document.querySelector(
   ".last-name-error .text-error"
 );
 
-const emailErrorXmark = document.querySelector(".email-error .fa-square-xmark");
 const emailErrorCheck = document.querySelector(".email-error .fa-square-check");
 const emailErrorText = document.querySelector(".email-error .text-error");
 
-const phoneErrorXmark = document.querySelector(".phone-error .fa-square-xmark");
 const phoneErrorCheck = document.querySelector(".phone-error .fa-square-check");
 const phoneErrorText = document.querySelector(".phone-error .text-error");
 
-const textareaErrorXmark = document.querySelector(
-  ".textarea-error .fa-square-xmark"
-);
-const textareaErrorCheck = document.querySelector(
-  ".textarea-error .fa-square-check"
-);
-const textareaErrorText = document.querySelector(".textarea-error .text-error");
-
-const form = document.querySelector("form");
-console.log(form);
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-});
-
-validateForm();
-
-function validateForm() {
+export function validateForm() {
   let validState = true;
 
   // first name
@@ -114,7 +88,8 @@ function validateForm() {
   }
 
   const btn = document.querySelector(".cta-contact");
-
+  const form = document.querySelector("form");
+  console.log(validState);
   btn.addEventListener("click", formSubmit);
 
   function formSubmit() {
@@ -123,9 +98,3 @@ function validateForm() {
     }
   }
 }
-
-const inputs = document.querySelectorAll("input");
-inputs.forEach(input => {
-  input.addEventListener("change", validateForm);
-  input.addEventListener("blur", validateForm);
-});
