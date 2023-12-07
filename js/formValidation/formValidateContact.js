@@ -72,7 +72,6 @@ export function validateForm() {
     phoneErrorCheck.style.display = "none";
     phoneErrorText.classList.remove("hidden");
     phoneErrorText.textContent = "";
-    validState = false;
   } else {
     const phoneRegex = /^\d{8}$/;
     if (!phoneRegex.test(phoneInput.value.trim())) {
