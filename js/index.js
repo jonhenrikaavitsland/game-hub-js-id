@@ -17,6 +17,7 @@ import { createCart } from "./pages/cart.js";
 import { button } from "./localStorage/button.js";
 import { updateCartLink } from "./localStorage/updateCartLink.js";
 import { validateForm } from "../js/formValidation/formValidateContact.js";
+import { emptyCartBtn } from "./render/cart/emptyCart.js";
 
 setNavStyle();
 landscape.addEventListener("change", setNavStyle);
@@ -51,6 +52,7 @@ switch (location.pathname) {
     break;
   case "/pages/cart/":
     createCart();
+    setTimeout(emptyCartBtn, 1000);
     break;
   case "/pages/cart/success/":
     break;
