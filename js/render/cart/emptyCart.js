@@ -1,5 +1,3 @@
-import { createCart } from "../../pages/cart.js";
-
 export function emptyCartBtn() {
   const emptyBtn = document.querySelector(".empty-btn");
   const parent = document.querySelector(".cart-container");

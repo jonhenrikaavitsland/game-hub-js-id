@@ -72,6 +72,7 @@ switch (location.pathname) {
     break;
   case "/pages/account/":
     break;
+  case "/index.html":
   case "/":
     createHome();
     headingContainer.addEventListener("click", hideContainer);
