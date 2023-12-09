@@ -20,10 +20,8 @@ export function communityUserReviews(game, parent, data) {
   reviewsContainer.classList.add("flex", "flex-col", "title-reviews-container");
   communityUserReviewsContainer.append(reviewsContainer);
 
-  console.log(data);
-
   const dataExtract = data.reviews[0];
-  console.log(dataExtract);
+
   for (let i = 0; i < data.reviews[0].length; i++) {
     const reviewBodyWrap = document.createElement("div");
     reviewBodyWrap.classList.add("flex", "review-wrap");
@@ -37,9 +35,8 @@ export function communityUserReviews(game, parent, data) {
     reviewBody.append(starsContainer);
 
     const wholeStars = Math.floor(dataExtract[i].rating);
-    console.log(wholeStars);
+
     const hasHalfStar = dataExtract[i].rating % 1 !== 0;
-    console.log(hasHalfStar);
 
     for (let y = 0; y < wholeStars; y++) {
       const fullStar = document.createElement("i");
