@@ -88,7 +88,6 @@ export function validateForm() {
 
   const btn = document.querySelector(".cta-contact");
   const form = document.querySelector("form");
-  console.log(validState);
   btn.addEventListener("click", formSubmit);
 
   function formSubmit() {

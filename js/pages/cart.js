@@ -6,9 +6,7 @@ import { fetchData } from "../data/fetchApi.js";
 
 const parentContainer = document.querySelector(".cart-container");
 const keys = await updateCartLink();
-console.log(keys);
 export const cartContent = [];
-console.log(cartContent);
 
 export async function createCartContent() {
   for (let i = 0; i < keys.length; i++) {
